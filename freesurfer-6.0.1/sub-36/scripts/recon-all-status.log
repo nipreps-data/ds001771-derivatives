@@ -1,0 +1,61 @@
+status file for recon-all
+Wed Jan 15 18:19:57 UTC 2020
+#@# T2/FLAIR Input Wed Jan 15 18:20:04 UTC 2020
+#@# MotionCor Wed Jan 15 18:20:10 UTC 2020
+#@# Talairach Wed Jan 15 18:20:28 UTC 2020
+#@# Talairach Failure Detection Wed Jan 15 18:24:30 UTC 2020
+#@# Nu Intensity Correction Wed Jan 15 18:24:30 UTC 2020
+#@# Intensity Normalization Wed Jan 15 18:30:30 UTC 2020
+recon-all -s sub-36 finished without error at Wed Jan 15 18:35:04 UTC 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Wed Jan 15 18:49:48 UTC 2020
+#@# EM Registration Wed Jan 15 18:49:48 UTC 2020
+#@# CA Normalize Wed Jan 15 18:55:25 UTC 2020
+#@# CA Reg Wed Jan 15 18:58:37 UTC 2020
+#@# SubCort Seg Wed Jan 15 20:51:19 UTC 2020
+#@# Merge ASeg Wed Jan 15 22:17:53 UTC 2020
+#@# Intensity Normalization2 Wed Jan 15 22:17:54 UTC 2020
+#@# Mask BFS Wed Jan 15 22:23:57 UTC 2020
+#@# WM Segmentation Wed Jan 15 22:24:06 UTC 2020
+#@# Fill Wed Jan 15 22:27:34 UTC 2020
+recon-all -s sub-36 finished without error at Wed Jan 15 22:28:53 UTC 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Jan 16 00:29:09 UTC 2020
+#@# Refine Pial Surfs w/ T2/FLAIR Thu Jan 16 00:29:10 UTC 2020
+#@# Surf Volume lh Thu Jan 16 01:40:38 UTC 2020
+#@# Surf Volume rh Thu Jan 16 01:40:44 UTC 2020
+#@# Surf Volume lh Thu Jan 16 01:40:50 UTC 2020
+#@# Surf Volume rh Thu Jan 16 01:40:57 UTC 2020
+#@# Cortical ribbon mask Thu Jan 16 01:41:04 UTC 2020
+recon-all -s sub-36 finished without error at Thu Jan 16 01:56:16 UTC 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Jan 16 02:06:59 UTC 2020
+#@# Relabel Hypointensities Thu Jan 16 02:07:00 UTC 2020
+#@# AParc-to-ASeg aparc Thu Jan 16 02:07:43 UTC 2020
+#@# AParc-to-ASeg a2009s Thu Jan 16 02:17:29 UTC 2020
+#@# AParc-to-ASeg DKTatlas Thu Jan 16 02:27:17 UTC 2020
+#@# APas-to-ASeg Thu Jan 16 02:37:00 UTC 2020
+#@# ASeg Stats Thu Jan 16 02:37:11 UTC 2020
+#@# WMParc Thu Jan 16 02:38:24 UTC 2020
+recon-all -s sub-36 finished without error at Thu Jan 16 02:51:05 UTC 2020

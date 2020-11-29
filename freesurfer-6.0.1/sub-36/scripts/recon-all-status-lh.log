@@ -1,0 +1,38 @@
+status file for recon-all
+Wed Jan 15 22:29:06 UTC 2020
+#@# Tessellate lh Wed Jan 15 22:29:06 UTC 2020
+#@# Smooth1 lh Wed Jan 15 22:29:16 UTC 2020
+#@# Inflation1 lh Wed Jan 15 22:29:23 UTC 2020
+#@# QSphere lh Wed Jan 15 22:31:12 UTC 2020
+#@# Fix Topology Copy lh Wed Jan 15 22:33:43 UTC 2020
+#@# Fix Topology lh Wed Jan 15 22:33:44 UTC 2020
+#@# Make White Surf lh Wed Jan 15 23:09:03 UTC 2020
+#@# Smooth2 lh Wed Jan 15 23:14:39 UTC 2020
+#@# Inflation2 lh Wed Jan 15 23:14:47 UTC 2020
+#@# Curv .H and .K lh Wed Jan 15 23:16:00 UTC 2020
+#@# Curvature Stats lh Wed Jan 15 23:17:31 UTC 2020
+#@# Sphere lh Wed Jan 15 23:17:38 UTC 2020
+#@# Surf Reg lh Wed Jan 15 23:27:41 UTC 2020
+#@# Jacobian white lh Thu Jan 16 00:03:51 UTC 2020
+#@# AvgCurv lh Thu Jan 16 00:03:53 UTC 2020
+#@# Cortical Parc lh Thu Jan 16 00:03:55 UTC 2020
+#@# Make Pial Surf lh Thu Jan 16 00:04:13 UTC 2020
+#@# Surf Volume lh Thu Jan 16 00:21:49 UTC 2020
+#@# Cortical Parc 2 lh Thu Jan 16 00:21:54 UTC 2020
+#@# Cortical Parc 3 lh Thu Jan 16 00:22:15 UTC 2020
+#@# WM/GM Contrast lh Thu Jan 16 00:22:31 UTC 2020
+recon-all -s sub-36 finished without error at Thu Jan 16 00:22:41 UTC 2020
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Thu Jan 16 01:56:27 UTC 2020
+#@# Parcellation Stats lh Thu Jan 16 01:56:27 UTC 2020
+#@# Parcellation Stats 2 lh Thu Jan 16 01:58:13 UTC 2020
+#@# Parcellation Stats 3 lh Thu Jan 16 01:59:07 UTC 2020
+#@# BA_exvivo Labels lh Thu Jan 16 02:00:00 UTC 2020
+recon-all -s sub-36 finished without error at Thu Jan 16 02:06:25 UTC 2020

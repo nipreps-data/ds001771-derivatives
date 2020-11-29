@@ -1,0 +1,15 @@
+{
+    "Name": "dMRIPrep - dMRI PREProcessing workflow",
+    "BIDSVersion": "1.1.1",
+    "PipelineDescription": {
+        "Name": "dMRIPrep",
+        "Version": "0.2.2+80.g3aec266.dirty",
+        "CodeURL": "https://github.com/nipreps/dmriprep/archive/0.2.2+80.g3aec266.dirty.tar.gz"
+    },
+    "CodeURL": "https://github.com/nipreps/dmriprep",
+    "HowToAcknowledge": "Please cite https://doi.org/10.5281/zenodo.3392201.",
+    "SourceDatasetsURLs": [
+        "https://doi.org/10.18112/openneuro.ds001771.v1.0.2"
+    ],
+    "License": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+}

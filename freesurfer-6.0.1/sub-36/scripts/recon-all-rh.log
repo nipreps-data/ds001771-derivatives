@@ -1,0 +1,3885 @@
+Wed Jan 15 22:29:00 UTC 2020
+/out/freesurfer/sub-36
+/opt/freesurfer/bin/recon-all
+-autorecon-hemi rh -noparcstats -noparcstats2 -noparcstats3 -nohyporelabel -nobalabels -openmp 8 -subjid sub-36 -sd /out/freesurfer
+subjid sub-36
+setenv SUBJECTS_DIR /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Actual FREESURFER_HOME /opt/freesurfer
+build-stamp.txt: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1-f53a55a
+Linux b11c2c40da5f 4.4.0-170-generic #199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize unlimited
+memoryuse    unlimited
+vmemoryuse   unlimited
+descriptors  1048576 
+memorylocked 64 kbytes
+maxproc      unlimited
+maxlocks     unlimited
+maxsignal    1547317 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+
+              total        used        free      shared  buff/cache   available
+Mem:      396165352    15689600   346333012      176780    34142740   378854852
+Swap:      46874616     1924336    44950280
+
+########################################
+program versions used
+$Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:00-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:01-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:01-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:01-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:01-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:01-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:02-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:03-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/15-22:29:04-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:05-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:06-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:06-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/15-22:29:06-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /opt/freesurfer/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /opt/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+#--------------------------------------------
+#@# Tessellate rh Wed Jan 15 22:29:06 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mri_pretess ../mri/filled.mgz 127 ../mri/norm.mgz ../mri/filled-pretess127.mgz 
+
+
+Iteration Number : 1
+pass   1 (xy+):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (xy-):   1 found -   1 modified     |    TOTAL:   1
+pass   2 (xy-):   0 found -   1 modified     |    TOTAL:   1
+pass   1 (yz+):   2 found -   2 modified     |    TOTAL:   3
+pass   2 (yz+):   0 found -   2 modified     |    TOTAL:   3
+pass   1 (yz-):   1 found -   1 modified     |    TOTAL:   4
+pass   2 (yz-):   0 found -   1 modified     |    TOTAL:   4
+pass   1 (xz+):   1 found -   1 modified     |    TOTAL:   5
+pass   2 (xz+):   0 found -   1 modified     |    TOTAL:   5
+pass   1 (xz-):   0 found -   0 modified     |    TOTAL:   5
+Iteration Number : 1
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+Iteration Number : 1
+pass   1 (++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+-):   1 found -   1 modified     |    TOTAL:   1
+pass   2 (+-):   0 found -   1 modified     |    TOTAL:   1
+pass   1 (--):   0 found -   0 modified     |    TOTAL:   1
+pass   1 (-+):   0 found -   0 modified     |    TOTAL:   1
+Iteration Number : 2
+pass   1 (xy+):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (xy-):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (yz+):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (yz-):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (xz+):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (xz-):   0 found -   0 modified     |    TOTAL:   0
+Iteration Number : 2
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+++):   0 found -   0 modified     |    TOTAL:   0
+Iteration Number : 2
+pass   1 (++):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (+-):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (--):   0 found -   0 modified     |    TOTAL:   0
+pass   1 (-+):   0 found -   0 modified     |    TOTAL:   0
+
+Total Number of Modified Voxels = 6 (out of 496155: 0.001209)
+Ambiguous edge configurations... 
+
+mri_pretess done
+
+
+ mri_tessellate ../mri/filled-pretess127.mgz 127 ../surf/rh.orig.nofix 
+
+$Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+slice 40: 1500 vertices, 1612 faces
+slice 50: 7481 vertices, 7746 faces
+slice 60: 16375 vertices, 16755 faces
+slice 70: 28513 vertices, 28979 faces
+slice 80: 43219 vertices, 43678 faces
+slice 90: 56991 vertices, 57457 faces
+slice 100: 71113 vertices, 71589 faces
+slice 110: 85063 vertices, 85579 faces
+slice 120: 99075 vertices, 99529 faces
+slice 130: 113096 vertices, 113578 faces
+slice 140: 126197 vertices, 126653 faces
+slice 150: 139045 vertices, 139537 faces
+slice 160: 151630 vertices, 152133 faces
+slice 170: 163816 vertices, 164266 faces
+slice 180: 174620 vertices, 175021 faces
+slice 190: 183883 vertices, 184265 faces
+slice 200: 191855 vertices, 192168 faces
+slice 210: 198765 vertices, 199042 faces
+slice 220: 204750 vertices, 204996 faces
+slice 230: 208630 vertices, 208817 faces
+slice 240: 209854 vertices, 209926 faces
+slice 250: 209854 vertices, 209926 faces
+slice 260: 209854 vertices, 209926 faces
+slice 270: 209854 vertices, 209926 faces
+slice 280: 209854 vertices, 209926 faces
+slice 290: 209854 vertices, 209926 faces
+slice 300: 209854 vertices, 209926 faces
+slice 310: 209854 vertices, 209926 faces
+slice 320: 209854 vertices, 209926 faces
+using the conformed surface RAS to save vertex points...
+writing ../surf/rh.orig.nofix
+using vox2ras matrix:
+-0.80000   0.00000   0.00000   128.00000;
+ 0.00000   0.00000   0.80000  -128.00000;
+ 0.00000  -0.80000   0.00000   128.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+ rm -f ../mri/filled-pretess127.mgz 
+
+
+ mris_extract_main_component ../surf/rh.orig.nofix ../surf/rh.orig.nofix 
+
+
+counting number of connected components...
+   209854 voxel in cpt #1: X=-72 [v=209854,e=629778,f=419852] located at (23.918678, -27.155767, 44.755634)
+For the whole surface: X=-72 [v=209854,e=629778,f=419852]
+One single component has been found
+nothing to do
+done
+
+#--------------------------------------------
+#@# Smooth1 rh Wed Jan 15 22:29:15 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_smooth -nw -seed 1234 ../surf/rh.orig.nofix ../surf/rh.smoothwm.nofix 
+
+setting seed for random number generator to 1234
+smoothing surface tessellation for 10 iterations...
+smoothing complete - recomputing first and second fundamental forms...
+#--------------------------------------------
+#@# Inflation1 rh Wed Jan 15 22:29:23 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_inflate -no-save-sulc -n 50 ../surf/rh.smoothwm.nofix ../surf/rh.inflated.nofix 
+
+niterations = 50
+Not saving sulc
+Reading ../surf/rh.smoothwm.nofix
+avg radius = 46.4 mm, total surface area = 73686 mm^2
+writing inflated surface to ../surf/rh.inflated.nofix
+inflation took 1.7 minutes
+step 000: RMS=0.144 (target=0.015)   step 005: RMS=0.112 (target=0.015)   step 010: RMS=0.086 (target=0.015)   step 015: RMS=0.074 (target=0.015)   step 020: RMS=0.065 (target=0.015)   step 025: RMS=0.059 (target=0.015)   step 030: RMS=0.053 (target=0.015)   step 035: RMS=0.049 (target=0.015)   step 040: RMS=0.045 (target=0.015)   step 045: RMS=0.044 (target=0.015)   step 050: RMS=0.042 (target=0.015)   step 055: RMS=0.041 (target=0.015)   step 060: RMS=0.039 (target=0.015)   step 065: RMS=0.038 (target=0.015)   step 070: RMS=0.037 (target=0.015)   step 075: RMS=0.037 (target=0.015)   step 080: RMS=0.036 (target=0.015)   step 085: RMS=0.036 (target=0.015)   step 090: RMS=0.035 (target=0.015)   step 095: RMS=0.035 (target=0.015)   step 100: RMS=0.035 (target=0.015)   step 105: RMS=0.035 (target=0.015)   step 110: RMS=0.035 (target=0.015)   step 115: RMS=0.035 (target=0.015)   step 120: RMS=0.035 (target=0.015)   step 125: RMS=0.035 (target=0.015)   step 130: RMS=0.035 (target=0.015)   step 135: RMS=0.035 (target=0.015)   step 140: RMS=0.035 (target=0.015)   step 145: RMS=0.035 (target=0.015)   step 150: RMS=0.035 (target=0.015)   step 155: RMS=0.035 (target=0.015)   step 160: RMS=0.035 (target=0.015)   step 165: RMS=0.035 (target=0.015)   step 170: RMS=0.035 (target=0.015)   step 175: RMS=0.035 (target=0.015)   step 180: RMS=0.035 (target=0.015)   step 185: RMS=0.035 (target=0.015)   step 190: RMS=0.035 (target=0.015)   step 195: RMS=0.035 (target=0.015)   step 200: RMS=0.035 (target=0.015)   step 205: RMS=0.035 (target=0.015)   step 210: RMS=0.035 (target=0.015)   step 215: RMS=0.035 (target=0.015)   step 220: RMS=0.035 (target=0.015)   step 225: RMS=0.035 (target=0.015)   step 230: RMS=0.035 (target=0.015)   step 235: RMS=0.035 (target=0.015)   step 240: RMS=0.035 (target=0.015)   step 245: RMS=0.035 (target=0.015)   step 250: RMS=0.034 (target=0.015)   step 255: RMS=0.035 (target=0.015)   step 260: RMS=0.036 (target=0.015)   step 265: RMS=0.036 (target=0.015)   step 270: RMS=0.036 (target=0.015)   step 275: RMS=0.036 (target=0.015)   step 280: RMS=0.036 (target=0.015)   step 285: RMS=0.036 (target=0.015)   step 290: RMS=0.036 (target=0.015)   step 295: RMS=0.036 (target=0.015)   step 300: RMS=0.036 (target=0.015)   
+inflation complete.
+Not saving sulc
+mris_inflate utimesec    439.892000
+mris_inflate stimesec    4.772000
+mris_inflate ru_maxrss   336444
+mris_inflate ru_ixrss    0
+mris_inflate ru_idrss    0
+mris_inflate ru_isrss    0
+mris_inflate ru_minflt   1757572
+mris_inflate ru_majflt   0
+mris_inflate ru_nswap    0
+mris_inflate ru_inblock  0
+mris_inflate ru_oublock  14768
+mris_inflate ru_msgsnd   0
+mris_inflate ru_msgrcv   0
+mris_inflate ru_nsignals 0
+mris_inflate ru_nvcsw    193142
+mris_inflate ru_nivcsw   450
+#--------------------------------------------
+#@# QSphere rh Wed Jan 15 22:31:05 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_sphere -q -seed 1234 ../surf/rh.inflated.nofix ../surf/rh.qsphere.nofix 
+
+doing quick spherical unfolding.
+setting seed for random number genererator to 1234
+$Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading original vertex positions...
+unfolding cortex into spherical form...
+surface projected - minimizing metric distortion...
+vertex spacing 0.79 +- 0.44 (0.00-->5.92) (max @ vno 94750 --> 96052)
+face area 0.02 +- 0.02 (-0.10-->0.44)
+
+== Number of threads available to mris_sphere for OpenMP = 8 == 
+scaling brain by 0.316...
+inflating to sphere (rms error < 2.00)
+000: dt: 0.0000, rms radial error=174.979, avgs=0
+005/300: dt: 0.9000, rms radial error=174.721, avgs=0
+010/300: dt: 0.9000, rms radial error=174.167, avgs=0
+015/300: dt: 0.9000, rms radial error=173.437, avgs=0
+020/300: dt: 0.9000, rms radial error=172.606, avgs=0
+025/300: dt: 0.9000, rms radial error=171.715, avgs=0
+030/300: dt: 0.9000, rms radial error=170.792, avgs=0
+035/300: dt: 0.9000, rms radial error=169.851, avgs=0
+040/300: dt: 0.9000, rms radial error=168.903, avgs=0
+045/300: dt: 0.9000, rms radial error=167.953, avgs=0
+050/300: dt: 0.9000, rms radial error=167.006, avgs=0
+055/300: dt: 0.9000, rms radial error=166.061, avgs=0
+060/300: dt: 0.9000, rms radial error=165.121, avgs=0
+065/300: dt: 0.9000, rms radial error=164.185, avgs=0
+070/300: dt: 0.9000, rms radial error=163.255, avgs=0
+075/300: dt: 0.9000, rms radial error=162.331, avgs=0
+080/300: dt: 0.9000, rms radial error=161.412, avgs=0
+085/300: dt: 0.9000, rms radial error=160.497, avgs=0
+090/300: dt: 0.9000, rms radial error=159.588, avgs=0
+095/300: dt: 0.9000, rms radial error=158.684, avgs=0
+100/300: dt: 0.9000, rms radial error=157.785, avgs=0
+105/300: dt: 0.9000, rms radial error=156.891, avgs=0
+110/300: dt: 0.9000, rms radial error=156.002, avgs=0
+115/300: dt: 0.9000, rms radial error=155.118, avgs=0
+120/300: dt: 0.9000, rms radial error=154.239, avgs=0
+125/300: dt: 0.9000, rms radial error=153.365, avgs=0
+130/300: dt: 0.9000, rms radial error=152.496, avgs=0
+135/300: dt: 0.9000, rms radial error=151.632, avgs=0
+140/300: dt: 0.9000, rms radial error=150.773, avgs=0
+145/300: dt: 0.9000, rms radial error=149.919, avgs=0
+150/300: dt: 0.9000, rms radial error=149.070, avgs=0
+155/300: dt: 0.9000, rms radial error=148.226, avgs=0
+160/300: dt: 0.9000, rms radial error=147.387, avgs=0
+165/300: dt: 0.9000, rms radial error=146.552, avgs=0
+170/300: dt: 0.9000, rms radial error=145.722, avgs=0
+175/300: dt: 0.9000, rms radial error=144.897, avgs=0
+180/300: dt: 0.9000, rms radial error=144.077, avgs=0
+185/300: dt: 0.9000, rms radial error=143.262, avgs=0
+190/300: dt: 0.9000, rms radial error=142.451, avgs=0
+195/300: dt: 0.9000, rms radial error=141.644, avgs=0
+200/300: dt: 0.9000, rms radial error=140.842, avgs=0
+205/300: dt: 0.9000, rms radial error=140.043, avgs=0
+210/300: dt: 0.9000, rms radial error=139.252, avgs=0
+215/300: dt: 0.9000, rms radial error=138.464, avgs=0
+220/300: dt: 0.9000, rms radial error=137.680, avgs=0
+225/300: dt: 0.9000, rms radial error=136.901, avgs=0
+230/300: dt: 0.9000, rms radial error=136.126, avgs=0
+235/300: dt: 0.9000, rms radial error=135.355, avgs=0
+240/300: dt: 0.9000, rms radial error=134.589, avgs=0
+245/300: dt: 0.9000, rms radial error=133.827, avgs=0
+250/300: dt: 0.9000, rms radial error=133.070, avgs=0
+255/300: dt: 0.9000, rms radial error=132.316, avgs=0
+260/300: dt: 0.9000, rms radial error=131.567, avgs=0
+265/300: dt: 0.9000, rms radial error=130.823, avgs=0
+270/300: dt: 0.9000, rms radial error=130.082, avgs=0
+275/300: dt: 0.9000, rms radial error=129.346, avgs=0
+280/300: dt: 0.9000, rms radial error=128.614, avgs=0
+285/300: dt: 0.9000, rms radial error=127.886, avgs=0
+290/300: dt: 0.9000, rms radial error=127.162, avgs=0
+295/300: dt: 0.9000, rms radial error=126.442, avgs=0
+300/300: dt: 0.9000, rms radial error=125.727, avgs=0
+
+spherical inflation complete.
+epoch 1 (K=10.0), pass 1, starting sse = 25791.80
+taking momentum steps...
+taking momentum steps...
+taking momentum steps...
+pass 1 complete, delta sse/iter = 0.00/10 = 0.00013
+epoch 2 (K=40.0), pass 1, starting sse = 4725.10
+taking momentum steps...
+taking momentum steps...
+taking momentum steps...
+pass 1 complete, delta sse/iter = -0.00/10 = -0.00000
+epoch 3 (K=160.0), pass 1, starting sse = 566.49
+taking momentum steps...
+taking momentum steps...
+taking momentum steps...
+pass 1 complete, delta sse/iter = 0.05/10 = 0.00463
+epoch 4 (K=640.0), pass 1, starting sse = 43.83
+taking momentum steps...
+taking momentum steps...
+taking momentum steps...
+pass 1 complete, delta sse/iter = 0.09/11 = 0.00799
+final distance error %25.58
+writing spherical brain to ../surf/rh.qsphere.nofix
+spherical transformation took 0.04 hours
+mris_sphere utimesec    440.964000
+mris_sphere stimesec    2.340000
+mris_sphere ru_maxrss   337064
+mris_sphere ru_ixrss    0
+mris_sphere ru_idrss    0
+mris_sphere ru_isrss    0
+mris_sphere ru_minflt   1953620
+mris_sphere ru_majflt   0
+mris_sphere ru_nswap    0
+mris_sphere ru_inblock  0
+mris_sphere ru_oublock  14768
+mris_sphere ru_msgsnd   0
+mris_sphere ru_msgrcv   0
+mris_sphere ru_nsignals 0
+mris_sphere ru_nvcsw    133136
+mris_sphere ru_nivcsw   258
+FSRUNTIME@ mris_sphere  0.0357 hours 1 threads
+#--------------------------------------------
+#@# Fix Topology Copy rh Wed Jan 15 22:33:14 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ cp ../surf/rh.orig.nofix ../surf/rh.orig 
+
+
+ cp ../surf/rh.inflated.nofix ../surf/rh.inflated 
+
+#@# Fix Topology rh Wed Jan 15 22:33:15 UTC 2020
+
+ mris_fix_topology -rusage /out/freesurfer/sub-36/touch/rusage.mris_fix_topology.rh.dat -mgz -sphere qsphere.nofix -ga -seed 1234 sub-36 rh 
+
+reading spherical homeomorphism from 'qsphere.nofix'
+using genetic algorithm with optimized parameters
+setting seed for random number genererator to 1234
+
+*************************************************************
+Topology Correction Parameters
+retessellation mode:           genetic search
+number of patches/generation : 10
+number of generations :        10
+surface mri loglikelihood coefficient :         1.0
+volume mri loglikelihood coefficient :          10.0
+normal dot loglikelihood coefficient :          1.0
+quadratic curvature loglikelihood coefficient : 1.0
+volume resolution :                             2
+eliminate vertices during search :              1
+initial patch selection :                       1
+select all defect vertices :                    0
+ordering dependant retessellation:              0
+use precomputed edge table :                    0
+smooth retessellated patch :                    2
+match retessellated patch :                     1
+verbose mode :                                  0
+
+*************************************************************
+INFO: assuming .mgz format
+$Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+before topology correction, eno=-72 (nv=209854, nf=419852, ne=629778, g=37)
+using quasi-homeomorphic spherical map to tessellate cortical surface...
+
+Correction of the Topology
+Finding true center and radius of Spherical Surface...done
+Surface centered at (0,0,0) with radius 100.0 in 9 iterations
+marking ambiguous vertices...
+7714 ambiguous faces found in tessellation
+segmenting defects...
+71 defects found, arbitrating ambiguous regions...
+analyzing neighboring defects...
+      -merging segment 29 into 22
+      -merging segment 28 into 22
+      -merging segment 69 into 67
+68 defects to be corrected 
+0 vertices coincident
+reading input surface /out/freesurfer/sub-36/surf/rh.qsphere.nofix...
+reading brain volume from brain...
+reading wm segmentation from wm...
+Computing Initial Surface Statistics
+      -face       loglikelihood: -9.3412  (-4.6706)
+      -vertex     loglikelihood: -5.8548  (-2.9274)
+      -normal dot loglikelihood: -3.5277  (-3.5277)
+      -quad curv  loglikelihood: -6.1811  (-3.0906)
+      Total Loglikelihood : -24.9048
+
+CORRECTING DEFECT 0 (vertices=21, convex hull=51, v0=3709)
+After retessellation of defect 0 (v0=3709), euler #=-67 (205163,613754,408524) : difference with theory (-65) = 2 
+
+CORRECTING DEFECT 1 (vertices=22, convex hull=35, v0=11263)
+After retessellation of defect 1 (v0=11263), euler #=-66 (205165,613772,408541) : difference with theory (-64) = 2 
+
+CORRECTING DEFECT 2 (vertices=29, convex hull=62, v0=27186)
+After retessellation of defect 2 (v0=27186), euler #=-65 (205172,613818,408581) : difference with theory (-63) = 2 
+
+CORRECTING DEFECT 3 (vertices=24, convex hull=54, v0=30544)
+After retessellation of defect 3 (v0=30544), euler #=-64 (205180,613861,408617) : difference with theory (-62) = 2 
+
+CORRECTING DEFECT 4 (vertices=41, convex hull=70, v0=45475)
+After retessellation of defect 4 (v0=45475), euler #=-63 (205189,613922,408670) : difference with theory (-61) = 2 
+
+CORRECTING DEFECT 5 (vertices=21, convex hull=30, v0=49429)
+After retessellation of defect 5 (v0=49429), euler #=-62 (205192,613939,408685) : difference with theory (-60) = 2 
+
+CORRECTING DEFECT 6 (vertices=35, convex hull=65, v0=49676)
+After retessellation of defect 6 (v0=49676), euler #=-61 (205198,613985,408726) : difference with theory (-59) = 2 
+
+CORRECTING DEFECT 7 (vertices=21, convex hull=32, v0=51234)
+After retessellation of defect 7 (v0=51234), euler #=-60 (205200,614001,408741) : difference with theory (-58) = 2 
+
+CORRECTING DEFECT 8 (vertices=13, convex hull=26, v0=53160)
+After retessellation of defect 8 (v0=53160), euler #=-59 (205201,614016,408756) : difference with theory (-57) = 2 
+
+CORRECTING DEFECT 9 (vertices=138, convex hull=138, v0=54847)
+After retessellation of defect 9 (v0=54847), euler #=-58 (205230,614167,408879) : difference with theory (-56) = 2 
+
+CORRECTING DEFECT 10 (vertices=31, convex hull=80, v0=59781)
+After retessellation of defect 10 (v0=59781), euler #=-57 (205239,614221,408925) : difference with theory (-55) = 2 
+
+CORRECTING DEFECT 11 (vertices=52, convex hull=31, v0=70155)
+After retessellation of defect 11 (v0=70155), euler #=-56 (205241,614235,408938) : difference with theory (-54) = 2 
+
+CORRECTING DEFECT 12 (vertices=40, convex hull=64, v0=71711)
+After retessellation of defect 12 (v0=71711), euler #=-55 (205250,614285,408980) : difference with theory (-53) = 2 
+
+CORRECTING DEFECT 13 (vertices=47, convex hull=32, v0=76031)
+After retessellation of defect 13 (v0=76031), euler #=-54 (205254,614309,409001) : difference with theory (-52) = 2 
+
+CORRECTING DEFECT 14 (vertices=17, convex hull=29, v0=76527)
+After retessellation of defect 14 (v0=76527), euler #=-53 (205256,614323,409014) : difference with theory (-51) = 2 
+
+CORRECTING DEFECT 15 (vertices=13, convex hull=32, v0=77097)
+After retessellation of defect 15 (v0=77097), euler #=-52 (205257,614335,409026) : difference with theory (-50) = 2 
+
+CORRECTING DEFECT 16 (vertices=25, convex hull=33, v0=79223)
+After retessellation of defect 16 (v0=79223), euler #=-51 (205259,614353,409043) : difference with theory (-49) = 2 
+
+CORRECTING DEFECT 17 (vertices=1008, convex hull=337, v0=80312)
+After retessellation of defect 17 (v0=80312), euler #=-50 (205273,614561,409238) : difference with theory (-48) = 2 
+
+CORRECTING DEFECT 18 (vertices=6, convex hull=18, v0=82129)
+After retessellation of defect 18 (v0=82129), euler #=-49 (205274,614571,409248) : difference with theory (-47) = 2 
+
+CORRECTING DEFECT 19 (vertices=22, convex hull=21, v0=86711)
+After retessellation of defect 19 (v0=86711), euler #=-48 (205276,614581,409257) : difference with theory (-46) = 2 
+
+CORRECTING DEFECT 20 (vertices=37, convex hull=67, v0=86729)
+After retessellation of defect 20 (v0=86729), euler #=-47 (205286,614638,409305) : difference with theory (-45) = 2 
+
+CORRECTING DEFECT 21 (vertices=91, convex hull=31, v0=89005)
+After retessellation of defect 21 (v0=89005), euler #=-46 (205290,614659,409323) : difference with theory (-44) = 2 
+
+CORRECTING DEFECT 22 (vertices=304, convex hull=280, v0=93453)
+After retessellation of defect 22 (v0=93453), euler #=-43 (205344,614964,409577) : difference with theory (-43) = 0 
+
+CORRECTING DEFECT 23 (vertices=8, convex hull=35, v0=97147)
+After retessellation of defect 23 (v0=97147), euler #=-42 (205348,614987,409597) : difference with theory (-42) = 0 
+
+CORRECTING DEFECT 24 (vertices=7, convex hull=30, v0=100105)
+After retessellation of defect 24 (v0=100105), euler #=-41 (205350,615002,409611) : difference with theory (-41) = 0 
+
+CORRECTING DEFECT 25 (vertices=18, convex hull=17, v0=105784)
+After retessellation of defect 25 (v0=105784), euler #=-40 (205352,615010,409618) : difference with theory (-40) = 0 
+
+CORRECTING DEFECT 26 (vertices=13, convex hull=35, v0=111745)
+After retessellation of defect 26 (v0=111745), euler #=-39 (205354,615025,409632) : difference with theory (-39) = 0 
+
+CORRECTING DEFECT 27 (vertices=30, convex hull=59, v0=112992)
+After retessellation of defect 27 (v0=112992), euler #=-38 (205364,615079,409677) : difference with theory (-38) = 0 
+
+CORRECTING DEFECT 28 (vertices=6, convex hull=12, v0=115748)
+After retessellation of defect 28 (v0=115748), euler #=-37 (205365,615088,409686) : difference with theory (-37) = 0 
+
+CORRECTING DEFECT 29 (vertices=50, convex hull=59, v0=116907)
+After retessellation of defect 29 (v0=116907), euler #=-36 (205372,615131,409723) : difference with theory (-36) = 0 
+
+CORRECTING DEFECT 30 (vertices=27, convex hull=66, v0=125292)
+After retessellation of defect 30 (v0=125292), euler #=-35 (205381,615180,409764) : difference with theory (-35) = 0 
+
+CORRECTING DEFECT 31 (vertices=24, convex hull=54, v0=130322)
+After retessellation of defect 31 (v0=130322), euler #=-34 (205390,615228,409804) : difference with theory (-34) = 0 
+
+CORRECTING DEFECT 32 (vertices=13, convex hull=21, v0=131597)
+After retessellation of defect 32 (v0=131597), euler #=-33 (205391,615239,409815) : difference with theory (-33) = 0 
+
+CORRECTING DEFECT 33 (vertices=9, convex hull=23, v0=134887)
+After retessellation of defect 33 (v0=134887), euler #=-32 (205393,615252,409827) : difference with theory (-32) = 0 
+
+CORRECTING DEFECT 34 (vertices=6, convex hull=24, v0=135672)
+After retessellation of defect 34 (v0=135672), euler #=-31 (205395,615263,409837) : difference with theory (-31) = 0 
+
+CORRECTING DEFECT 35 (vertices=6, convex hull=23, v0=136810)
+After retessellation of defect 35 (v0=136810), euler #=-30 (205396,615273,409847) : difference with theory (-30) = 0 
+
+CORRECTING DEFECT 36 (vertices=300, convex hull=226, v0=139039)
+After retessellation of defect 36 (v0=139039), euler #=-29 (205447,615541,410065) : difference with theory (-29) = 0 
+
+CORRECTING DEFECT 37 (vertices=54, convex hull=24, v0=146008)
+After retessellation of defect 37 (v0=146008), euler #=-28 (205450,615556,410078) : difference with theory (-28) = 0 
+
+CORRECTING DEFECT 38 (vertices=127, convex hull=43, v0=147147)
+After retessellation of defect 38 (v0=147147), euler #=-27 (205458,615595,410110) : difference with theory (-27) = 0 
+
+CORRECTING DEFECT 39 (vertices=54, convex hull=61, v0=148631)
+After retessellation of defect 39 (v0=148631), euler #=-26 (205470,615658,410162) : difference with theory (-26) = 0 
+
+CORRECTING DEFECT 40 (vertices=7, convex hull=35, v0=148720)
+After retessellation of defect 40 (v0=148720), euler #=-25 (205471,615672,410176) : difference with theory (-25) = 0 
+
+CORRECTING DEFECT 41 (vertices=154, convex hull=115, v0=150138)
+After retessellation of defect 41 (v0=150138), euler #=-25 (205494,615794,410275) : difference with theory (-24) = 1 
+
+CORRECTING DEFECT 42 (vertices=19, convex hull=25, v0=152858)
+After retessellation of defect 42 (v0=152858), euler #=-24 (205494,615804,410286) : difference with theory (-23) = 1 
+
+CORRECTING DEFECT 43 (vertices=110, convex hull=130, v0=154884)
+After retessellation of defect 43 (v0=154884), euler #=-23 (205504,615890,410363) : difference with theory (-22) = 1 
+
+CORRECTING DEFECT 44 (vertices=9, convex hull=22, v0=156351)
+After retessellation of defect 44 (v0=156351), euler #=-22 (205505,615898,410371) : difference with theory (-21) = 1 
+
+CORRECTING DEFECT 45 (vertices=9, convex hull=30, v0=157588)
+After retessellation of defect 45 (v0=157588), euler #=-21 (205508,615918,410389) : difference with theory (-20) = 1 
+
+CORRECTING DEFECT 46 (vertices=46, convex hull=62, v0=161245)
+After retessellation of defect 46 (v0=161245), euler #=-20 (205520,615979,410439) : difference with theory (-19) = 1 
+
+CORRECTING DEFECT 47 (vertices=38, convex hull=67, v0=162153)
+After retessellation of defect 47 (v0=162153), euler #=-19 (205528,616035,410488) : difference with theory (-18) = 1 
+
+CORRECTING DEFECT 48 (vertices=232, convex hull=69, v0=162196)
+After retessellation of defect 48 (v0=162196), euler #=-18 (205548,616126,410560) : difference with theory (-17) = 1 
+
+CORRECTING DEFECT 49 (vertices=39, convex hull=58, v0=164929)
+After retessellation of defect 49 (v0=164929), euler #=-17 (205557,616177,410603) : difference with theory (-16) = 1 
+
+CORRECTING DEFECT 50 (vertices=8, convex hull=29, v0=169961)
+After retessellation of defect 50 (v0=169961), euler #=-16 (205559,616192,410617) : difference with theory (-15) = 1 
+
+CORRECTING DEFECT 51 (vertices=41, convex hull=32, v0=171002)
+After retessellation of defect 51 (v0=171002), euler #=-15 (205561,616211,410635) : difference with theory (-14) = 1 
+
+CORRECTING DEFECT 52 (vertices=20, convex hull=37, v0=172317)
+After retessellation of defect 52 (v0=172317), euler #=-14 (205567,616240,410659) : difference with theory (-13) = 1 
+
+CORRECTING DEFECT 53 (vertices=33, convex hull=70, v0=173657)
+After retessellation of defect 53 (v0=173657), euler #=-13 (205576,616294,410705) : difference with theory (-12) = 1 
+
+CORRECTING DEFECT 54 (vertices=69, convex hull=67, v0=173791)
+After retessellation of defect 54 (v0=173791), euler #=-12 (205586,616352,410754) : difference with theory (-11) = 1 
+
+CORRECTING DEFECT 55 (vertices=156, convex hull=64, v0=176372)
+After retessellation of defect 55 (v0=176372), euler #=-11 (205598,616413,410804) : difference with theory (-10) = 1 
+
+CORRECTING DEFECT 56 (vertices=38, convex hull=108, v0=179005)
+After retessellation of defect 56 (v0=179005), euler #=-10 (205607,616487,410870) : difference with theory (-9) = 1 
+
+CORRECTING DEFECT 57 (vertices=101, convex hull=132, v0=180240)
+After retessellation of defect 57 (v0=180240), euler #=-9 (205623,616596,410964) : difference with theory (-8) = 1 
+
+CORRECTING DEFECT 58 (vertices=8, convex hull=19, v0=180875)
+After retessellation of defect 58 (v0=180875), euler #=-8 (205625,616609,410976) : difference with theory (-7) = 1 
+
+CORRECTING DEFECT 59 (vertices=22, convex hull=20, v0=180916)
+After retessellation of defect 59 (v0=180916), euler #=-7 (205627,616618,410984) : difference with theory (-6) = 1 
+
+CORRECTING DEFECT 60 (vertices=57, convex hull=52, v0=183615)
+After retessellation of defect 60 (v0=183615), euler #=-6 (205635,616658,411017) : difference with theory (-5) = 1 
+
+CORRECTING DEFECT 61 (vertices=43, convex hull=22, v0=189396)
+After retessellation of defect 61 (v0=189396), euler #=-5 (205638,616671,411028) : difference with theory (-4) = 1 
+
+CORRECTING DEFECT 62 (vertices=11, convex hull=16, v0=194717)
+After retessellation of defect 62 (v0=194717), euler #=-4 (205639,616679,411036) : difference with theory (-3) = 1 
+
+CORRECTING DEFECT 63 (vertices=130, convex hull=138, v0=194726)
+After retessellation of defect 63 (v0=194726), euler #=-3 (205657,616802,411142) : difference with theory (-2) = 1 
+
+CORRECTING DEFECT 64 (vertices=24, convex hull=57, v0=200261)
+After retessellation of defect 64 (v0=200261), euler #=-2 (205664,616846,411180) : difference with theory (-1) = 1 
+
+CORRECTING DEFECT 65 (vertices=252, convex hull=109, v0=205986)
+After retessellation of defect 65 (v0=205986), euler #=0 (205686,616961,411275) : difference with theory (0) = 0 
+
+CORRECTING DEFECT 66 (vertices=178, convex hull=141, v0=207042)
+After retessellation of defect 66 (v0=207042), euler #=1 (205704,617078,411375) : difference with theory (1) = 0 
+
+CORRECTING DEFECT 67 (vertices=24, convex hull=62, v0=208837)
+After retessellation of defect 67 (v0=208837), euler #=2 (205711,617127,411418) : difference with theory (2) = 0 
+computing original vertex metric properties...
+storing new metric properties...
+computing tessellation statistics...
+vertex spacing 0.71 +- 0.21 (0.06-->15.02) (max @ vno 85347 --> 94531)
+face area 0.00 +- 0.00 (0.00-->0.00)
+performing soap bubble on retessellated vertices for 0 iterations...
+vertex spacing 0.71 +- 0.21 (0.06-->15.02) (max @ vno 85347 --> 94531)
+face area 0.00 +- 0.00 (0.00-->0.00)
+tessellation finished, orienting corrected surface...
+244 mutations (35.2%), 450 crossovers (64.8%), 134 vertices were eliminated
+building final representation...
+4143 vertices and 0 faces have been removed from triangulation
+after topology correction, eno=2 (nv=205711, nf=411418, ne=617127, g=0)
+writing corrected surface to /out/freesurfer/sub-36/surf/rh.orig...
+
+0.000 % of the vertices (0 vertices) exhibit an orientation change
+topology fixing took 37.5 minutes
+0 defective edges
+removing intersecting faces
+000: 426 intersecting
+001: 13 intersecting
+mris_fix_topology utimesec    2261.516000
+mris_fix_topology stimesec    1.732000
+mris_fix_topology ru_maxrss   694212
+mris_fix_topology ru_ixrss    0
+mris_fix_topology ru_idrss    0
+mris_fix_topology ru_isrss    0
+mris_fix_topology ru_minflt   3170813
+mris_fix_topology ru_majflt   0
+mris_fix_topology ru_nswap    0
+mris_fix_topology ru_inblock  0
+mris_fix_topology ru_oublock  19392
+mris_fix_topology ru_msgsnd   0
+mris_fix_topology ru_msgrcv   0
+mris_fix_topology ru_nsignals 0
+mris_fix_topology ru_nvcsw    7825
+mris_fix_topology ru_nivcsw   911
+FSRUNTIME@ mris_fix_topology rh  0.6252 hours 1 threads
+
+ mris_euler_number ../surf/rh.orig 
+
+euler # = v-e+f = 2g-2: 205711 - 617127 + 411418 = 2 --> 0 holes
+      F =2V-4:          411418 = 411422-4 (0)
+      2E=3F:            1234254 = 1234254 (0)
+
+total defect index = 0
+/out/freesurfer/sub-36/scripts
+
+ mris_remove_intersection ../surf/rh.orig ../surf/rh.orig 
+
+intersection removal took 0.00 hours
+removing intersecting faces
+000: 70 intersecting
+001: 2 intersecting
+writing corrected surface to ../surf/rh.orig
+
+ rm ../surf/rh.inflated 
+
+#--------------------------------------------
+#@# Make White Surf rh Wed Jan 15 23:10:53 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_make_surfaces -aseg ../mri/aseg.presurf -white white.preaparc -noaparc -whiteonly -mgz -T1 brain.finalsurfs sub-36 rh 
+
+using white.preaparc as white matter name...
+only generating white matter surface
+using aseg volume ../mri/aseg.presurf to prevent surfaces crossing the midline
+not using aparc to prevent surfaces crossing the midline
+INFO: assuming MGZ format for volumes.
+using brain.finalsurfs as T1 volume...
+$Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $
+$Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading volume /out/freesurfer/sub-36/mri/filled.mgz...
+reading volume /out/freesurfer/sub-36/mri/brain.finalsurfs.mgz...
+reading volume /out/freesurfer/sub-36/mri/../mri/aseg.presurf.mgz...
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+28259 bright wm thresholded.
+6 bright non-wm voxels segmented.
+reading original surface position from /out/freesurfer/sub-36/surf/rh.orig...
+computing class statistics...
+border white:    421270 voxels (1.29%)
+border gray      435261 voxels (1.33%)
+WM (98.0): 99.0 +- 6.6 [70.0 --> 110.0]
+GM (81.0) : 80.4 +- 8.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 68.3 (was 70)
+setting MAX_BORDER_WHITE to 112.6 (was 105)
+setting MIN_BORDER_WHITE to 77.0 (was 85)
+setting MAX_CSF to 59.5 (was 40)
+setting MAX_GRAY to 99.4 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 68.3 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 50.8 (was 40)
+repositioning cortical surface to gray/white boundary
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.67 +- 0.18 (0.02-->5.65) (max @ vno 95785 --> 205269)
+face area 0.19 +- 0.09 (0.00-->11.65)
+mean absolute distance = 1.54 +- 1.67
+7196 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+spring scale = 1.25
+using class modes intead of means, discounting robust sigmas....
+intensity peaks found at WM=106+-6.1,    GM=77+-7.0
+mean inside = 97.2, mean outside = 81.8
+smoothing surface for 5 iterations...
+inhibiting deformation at non-cortical midline structures...
+removing 4 vertex label from ripped group
+mean border=94.9, 171 (171) missing vertices, mean dist -0.9 [2.1 (%58.8)->0.6 (%41.2))]
+%46 local maxima, %38 large gradients and %11 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=4, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+complete_dist_mat 0
+rms 0
+smooth_averages 0
+remove_neg 0
+ico_order 0
+which_surface 0
+target_radius 0.000000
+nfields 0
+scale 0.000000
+desired_rms_height 0.000000
+momentum 0.000000
+nbhd_size 0
+max_nbrs 0
+niterations 25
+nsurfaces 0
+SURFACES 3
+flags 0 (0)
+use curv 0
+no sulc 0
+no rigid align 0
+mris->nsize 2
+mris->hemisphere 1
+randomSeed 0
+
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.71 +- 0.21 (0.03-->6.26) (max @ vno 97164 --> 90908)
+face area 0.19 +- 0.10 (0.00-->10.31)
+mean absolute distance = 0.65 +- 0.83
+5980 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=4724188.0, rms=9.757
+001: dt: 0.5000, sse=2492944.2, rms=6.417 (34.235%)
+002: dt: 0.5000, sse=1598930.8, rms=4.170 (35.013%)
+003: dt: 0.5000, sse=1312792.9, rms=3.167 (24.062%)
+004: dt: 0.5000, sse=1260170.5, rms=2.854 (9.885%)
+005: dt: 0.5000, sse=1248573.9, rms=2.744 (3.828%)
+006: dt: 0.5000, sse=1234253.9, rms=2.693 (1.864%)
+rms = 2.65, time step reduction 1 of 3 to 0.250...
+007: dt: 0.5000, sse=1187465.5, rms=2.654 (1.453%)
+008: dt: 0.2500, sse=1053510.0, rms=1.764 (33.545%)
+009: dt: 0.2500, sse=1013509.8, rms=1.574 (10.788%)
+010: dt: 0.2500, sse=1024863.8, rms=1.513 (3.855%)
+rms = 1.47, time step reduction 2 of 3 to 0.125...
+011: dt: 0.2500, sse=1036831.2, rms=1.470 (2.843%)
+rms = 1.45, time step reduction 3 of 3 to 0.062...
+012: dt: 0.1250, sse=984323.1, rms=1.450 (1.330%)
+positioning took 1.4 minutes
+inhibiting deformation at non-cortical midline structures...
+removing 3 vertex label from ripped group
+removing 2 vertex label from ripped group
+removing 2 vertex label from ripped group
+removing 4 vertex label from ripped group
+removing 4 vertex label from ripped group
+mean border=93.8, 283 (43) missing vertices, mean dist -0.1 [1.0 (%38.7)->0.4 (%61.3))]
+%77 local maxima, %15 large gradients and % 3 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=1.0, host=b11c2, nav=2, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.70 +- 0.20 (0.04-->6.82) (max @ vno 97164 --> 90908)
+face area 0.21 +- 0.11 (0.00-->11.98)
+mean absolute distance = 0.40 +- 0.64
+8652 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=1682736.1, rms=4.134
+013: dt: 0.5000, sse=1305095.6, rms=2.506 (39.366%)
+014: dt: 0.5000, sse=1193478.9, rms=2.208 (11.916%)
+rms = 2.30, time step reduction 1 of 3 to 0.250...
+015: dt: 0.2500, sse=1081468.2, rms=1.556 (29.514%)
+016: dt: 0.2500, sse=1059562.0, rms=1.173 (24.635%)
+017: dt: 0.2500, sse=1054080.5, rms=1.073 (8.551%)
+rms = 1.03, time step reduction 2 of 3 to 0.125...
+018: dt: 0.2500, sse=1058340.0, rms=1.027 (4.204%)
+rms = 1.00, time step reduction 3 of 3 to 0.062...
+019: dt: 0.1250, sse=1030938.4, rms=1.003 (2.380%)
+positioning took 0.9 minutes
+inhibiting deformation at non-cortical midline structures...
+removing 3 vertex label from ripped group
+removing 4 vertex label from ripped group
+removing 3 vertex label from ripped group
+removing 2 vertex label from ripped group
+removing 3 vertex label from ripped group
+mean border=93.9, 260 (27) missing vertices, mean dist -0.1 [0.6 (%42.4)->0.2 (%57.6))]
+%85 local maxima, % 9 large gradients and % 1 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=0.5, host=b11c2, nav=1, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.70 +- 0.19 (0.03-->7.05) (max @ vno 97164 --> 90908)
+face area 0.20 +- 0.11 (0.00-->11.65)
+mean absolute distance = 0.33 +- 0.52
+7544 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=1152826.4, rms=2.199
+020: dt: 0.5000, sse=1124416.5, rms=1.662 (24.427%)
+rms = 1.78, time step reduction 1 of 3 to 0.250...
+021: dt: 0.2500, sse=1027352.3, rms=1.233 (25.836%)
+022: dt: 0.2500, sse=1022119.2, rms=1.027 (16.677%)
+023: dt: 0.2500, sse=1006828.8, rms=0.968 (5.756%)
+rms = 0.95, time step reduction 2 of 3 to 0.125...
+024: dt: 0.2500, sse=1007189.2, rms=0.953 (1.549%)
+rms = 0.93, time step reduction 3 of 3 to 0.062...
+025: dt: 0.1250, sse=1003386.4, rms=0.932 (2.190%)
+positioning took 0.8 minutes
+inhibiting deformation at non-cortical midline structures...
+removing 4 vertex label from ripped group
+removing 1 vertex label from ripped group
+removing 3 vertex label from ripped group
+removing 3 vertex label from ripped group
+removing 4 vertex label from ripped group
+mean border=93.8, 254 (20) missing vertices, mean dist -0.1 [0.5 (%40.7)->0.2 (%59.3))]
+%89 local maxima, % 6 large gradients and % 0 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=0.2, host=b11c2, nav=0, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+writing white matter surface to /out/freesurfer/sub-36/surf/rh.white.preaparc...
+writing smoothed curvature to rh.curv
+000: dt: 0.0000, sse=1066017.1, rms=1.570
+026: dt: 0.5000, sse=1033873.9, rms=1.207 (23.104%)
+rms = 1.53, time step reduction 1 of 3 to 0.250...
+027: dt: 0.2500, sse=982831.2, rms=0.893 (26.040%)
+028: dt: 0.2500, sse=1041464.2, rms=0.825 (7.598%)
+rms = 0.79, time step reduction 2 of 3 to 0.125...
+029: dt: 0.2500, sse=979977.8, rms=0.787 (4.549%)
+rms = 0.78, time step reduction 3 of 3 to 0.062...
+030: dt: 0.1250, sse=973428.6, rms=0.778 (1.188%)
+positioning took 0.7 minutes
+generating cortex label...
+14 non-cortical segments detected
+only using segment with 10509 vertices
+erasing segment 0 (vno[0] = 63312)
+erasing segment 2 (vno[0] = 83970)
+erasing segment 3 (vno[0] = 94575)
+erasing segment 4 (vno[0] = 112825)
+erasing segment 5 (vno[0] = 129532)
+erasing segment 6 (vno[0] = 130856)
+erasing segment 7 (vno[0] = 146103)
+erasing segment 8 (vno[0] = 146161)
+erasing segment 9 (vno[0] = 150679)
+erasing segment 10 (vno[0] = 150825)
+erasing segment 11 (vno[0] = 152114)
+erasing segment 12 (vno[0] = 155501)
+erasing segment 13 (vno[0] = 156866)
+writing cortex label to /out/freesurfer/sub-36/label/rh.cortex.label...
+writing curvature file /out/freesurfer/sub-36/surf/rh.curv
+writing smoothed area to rh.area
+writing curvature file /out/freesurfer/sub-36/surf/rh.area
+vertex spacing 0.70 +- 0.20 (0.01-->7.19) (max @ vno 90908 --> 97164)
+face area 0.20 +- 0.11 (0.00-->11.61)
+refinement took 5.7 minutes
+#--------------------------------------------
+#@# Smooth2 rh Wed Jan 15 23:16:33 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_smooth -n 3 -nw -seed 1234 ../surf/rh.white.preaparc ../surf/rh.smoothwm 
+
+smoothing for 3 iterations
+setting seed for random number generator to 1234
+smoothing surface tessellation for 3 iterations...
+smoothing complete - recomputing first and second fundamental forms...
+#--------------------------------------------
+#@# Inflation2 rh Wed Jan 15 23:16:40 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_inflate -rusage /out/freesurfer/sub-36/touch/rusage.mris_inflate.rh.dat -n 50 ../surf/rh.smoothwm ../surf/rh.inflated 
+
+niterations = 50
+Reading ../surf/rh.smoothwm
+avg radius = 46.5 mm, total surface area = 77192 mm^2
+writing inflated surface to ../surf/rh.inflated
+writing sulcal depths to ../surf/rh.sulc
+step 000: RMS=0.156 (target=0.015)   step 005: RMS=0.113 (target=0.015)   step 010: RMS=0.086 (target=0.015)   step 015: RMS=0.071 (target=0.015)   step 020: RMS=0.060 (target=0.015)   step 025: RMS=0.051 (target=0.015)   step 030: RMS=0.043 (target=0.015)   step 035: RMS=0.038 (target=0.015)   step 040: RMS=0.033 (target=0.015)   step 045: RMS=0.029 (target=0.015)   step 050: RMS=0.027 (target=0.015)   step 055: RMS=0.024 (target=0.015)   step 060: RMS=0.022 (target=0.015)   step 065: RMS=0.021 (target=0.015)   step 070: RMS=0.020 (target=0.015)   step 075: RMS=0.019 (target=0.015)   step 080: RMS=0.018 (target=0.015)   step 085: RMS=0.018 (target=0.015)   step 090: RMS=0.017 (target=0.015)   step 095: RMS=0.017 (target=0.015)   step 100: RMS=0.017 (target=0.015)   step 105: RMS=0.017 (target=0.015)   step 110: RMS=0.017 (target=0.015)   step 115: RMS=0.016 (target=0.015)   step 120: RMS=0.016 (target=0.015)   step 125: RMS=0.016 (target=0.015)   step 130: RMS=0.016 (target=0.015)   step 135: RMS=0.016 (target=0.015)   step 140: RMS=0.016 (target=0.015)   step 145: RMS=0.016 (target=0.015)   step 150: RMS=0.016 (target=0.015)   step 155: RMS=0.016 (target=0.015)   step 160: RMS=0.015 (target=0.015)   step 165: RMS=0.015 (target=0.015)   step 170: RMS=0.015 (target=0.015)   step 175: RMS=0.015 (target=0.015)   step 180: RMS=0.015 (target=0.015)   step 185: RMS=0.015 (target=0.015)   step 190: RMS=0.015 (target=0.015)   step 195: RMS=0.015 (target=0.015)   step 200: RMS=0.015 (target=0.015)   
+inflation complete.
+inflation took 1.5 minutes
+mris_inflate utimesec    393.080000
+mris_inflate stimesec    4.652000
+mris_inflate ru_maxrss   330008
+mris_inflate ru_ixrss    0
+mris_inflate ru_idrss    0
+mris_inflate ru_isrss    0
+mris_inflate ru_minflt   2042975
+mris_inflate ru_majflt   0
+mris_inflate ru_nswap    0
+mris_inflate ru_inblock  0
+mris_inflate ru_oublock  16080
+mris_inflate ru_msgsnd   0
+mris_inflate ru_msgrcv   0
+mris_inflate ru_nsignals 0
+mris_inflate ru_nvcsw    151394
+mris_inflate ru_nivcsw   437
+#--------------------------------------------
+#@# Curv .H and .K rh Wed Jan 15 23:18:08 UTC 2020
+/out/freesurfer/sub-36/surf
+
+ mris_curvature -w rh.white.preaparc 
+
+total integrated curvature = 69.618*4pi (874.848) --> -69 handles
+ICI = 308.2, FI = 2254.6, variation=37732.857
+writing Gaussian curvature to ./rh.white.preaparc.K...done.
+writing mean curvature to ./rh.white.preaparc.H...done.
+rm -f rh.white.H
+ln -s rh.white.preaparc.H rh.white.H
+rm -f rh.white.K
+ln -s rh.white.preaparc.K rh.white.K
+
+ mris_curvature -thresh .999 -n -a 5 -w -distances 10 10 rh.inflated 
+
+normalizing curvature values.
+averaging curvature patterns 5 times.
+sampling 10 neighbors out to a distance of 10 mm
+356 vertices thresholded to be in k1 ~ [-0.11 0.96], k2 ~ [-0.09 0.04]
+total integrated curvature = 0.755*4pi (9.482) --> 0 handles
+ICI = 1.1, FI = 3.9, variation=77.397
+170 vertices thresholded to be in [-0.01 0.01]
+writing Gaussian curvature to ./rh.inflated.K...thresholding curvature at 99.90% level
+curvature mean = 0.000, std = 0.001
+171 vertices thresholded to be in [-0.09 0.09]
+done.
+writing mean curvature to ./rh.inflated.H...curvature mean = -0.016, std = 0.014
+done.
+
+#-----------------------------------------
+#@# Curvature Stats rh Wed Jan 15 23:19:45 UTC 2020
+/out/freesurfer/sub-36/surf
+
+ mris_curvature_stats -m --writeCurvatureFiles -G -o ../stats/rh.curv.stats -F smoothwm sub-36 rh curv sulc 
+
+             Toggling save flag on curvature files                       [ ok ]
+                 Outputting results using filestem   [ ../stats/rh.curv.stats ]
+             Toggling save flag on curvature files                       [ ok ]
+                                   Setting surface       [ sub-36/rh.smoothwm ]
+                                Reading surface...                       [ ok ]
+                                   Setting texture                     [ curv ]
+                                Reading texture...                       [ ok ]
+                                   Setting texture                     [ sulc ]
+                                Reading texture...Gb_filter = 0
+                       [ ok ]
+      Calculating Discrete Principal Curvatures...
+   Determining geometric order for vertex faces... [####################] [ ok ]
+                      Determining KH curvatures... [####################] [ ok ]
+                    Determining k1k2 curvatures... [####################] [ ok ]
+                                   deltaViolations                      [ 418 ]
+Gb_filter = 0
+
+WARN:    S lookup   min:                          -0.020225
+WARN:    S explicit min:                          0.000000	vertex = 190
+#--------------------------------------------
+#@# Sphere rh Wed Jan 15 23:19:52 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_sphere -rusage /out/freesurfer/sub-36/touch/rusage.mris_sphere.rh.dat -seed 1234 ../surf/rh.inflated ../surf/rh.sphere 
+
+setting seed for random number genererator to 1234
+$Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading original vertex positions...
+unfolding cortex into spherical form...
+surface projected - minimizing metric distortion...
+
+== Number of threads available to mris_sphere for OpenMP = 8 == 
+scaling brain by 0.301...
+MRISunfold() max_passes = 1 -------
+tol=5.0e-01, sigma=0.0, host=b11c2, nav=1024, nbrs=2, l_area=1.000, l_dist=1.000
+using quadratic fit line minimization
+complete_dist_mat 0
+rms 0
+smooth_averages 0
+remove_neg 0
+ico_order 0
+which_surface 0
+target_radius 0.000000
+nfields 0
+scale 1.000000
+desired_rms_height -1.000000
+momentum 0.900000
+nbhd_size 7
+max_nbrs 8
+niterations 25
+nsurfaces 0
+SURFACES 3
+flags 0 (0)
+use curv 0
+no sulc 0
+no rigid align 0
+mris->nsize 2
+mris->hemisphere 1
+randomSeed 1234
+
+--------------------
+  mrisRemoveNegativeArea()
+pass 1: epoch 1 of 3 starting distance error %37.89
+pass 1: epoch 2 of 3 starting distance error %20.68
+unfolding complete - removing small folds...
+starting distance error %20.62
+removing remaining folds...
+final distance error %20.64
+MRISunfold() return, current seed 1234
+-01: dt=0.0000, 527 negative triangles
+098: dt=0.9900, 527 negative triangles
+099: dt=0.9900, 313 negative triangles
+100: dt=0.9900, 262 negative triangles
+101: dt=0.9900, 234 negative triangles
+102: dt=0.9900, 232 negative triangles
+103: dt=0.9900, 215 negative triangles
+104: dt=0.9900, 211 negative triangles
+105: dt=0.9900, 201 negative triangles
+106: dt=0.9900, 193 negative triangles
+107: dt=0.9900, 191 negative triangles
+108: dt=0.9900, 177 negative triangles
+109: dt=0.9900, 168 negative triangles
+110: dt=0.9900, 163 negative triangles
+111: dt=0.9900, 148 negative triangles
+112: dt=0.9900, 144 negative triangles
+113: dt=0.9900, 143 negative triangles
+114: dt=0.9900, 137 negative triangles
+115: dt=0.9900, 126 negative triangles
+116: dt=0.9900, 128 negative triangles
+117: dt=0.9900, 118 negative triangles
+118: dt=0.9900, 115 negative triangles
+119: dt=0.9900, 115 negative triangles
+120: dt=0.9900, 115 negative triangles
+121: dt=0.9900, 108 negative triangles
+122: dt=0.9900, 106 negative triangles
+123: dt=0.9900, 105 negative triangles
+124: dt=0.9900, 110 negative triangles
+125: dt=0.9900, 113 negative triangles
+126: dt=0.9900, 106 negative triangles
+127: dt=0.9900, 101 negative triangles
+128: dt=0.9900, 108 negative triangles
+129: dt=0.9900, 106 negative triangles
+130: dt=0.9900, 104 negative triangles
+131: dt=0.9900, 85 negative triangles
+132: dt=0.9900, 87 negative triangles
+133: dt=0.9900, 91 negative triangles
+134: dt=0.9900, 89 negative triangles
+135: dt=0.9900, 87 negative triangles
+136: dt=0.9900, 87 negative triangles
+137: dt=0.9900, 86 negative triangles
+138: dt=0.9900, 81 negative triangles
+139: dt=0.9900, 83 negative triangles
+140: dt=0.9900, 87 negative triangles
+141: dt=0.9900, 73 negative triangles
+142: dt=0.9900, 82 negative triangles
+143: dt=0.9900, 88 negative triangles
+144: dt=0.9900, 73 negative triangles
+145: dt=0.9900, 74 negative triangles
+146: dt=0.9900, 78 negative triangles
+147: dt=0.9900, 73 negative triangles
+148: dt=0.9900, 72 negative triangles
+149: dt=0.9900, 75 negative triangles
+150: dt=0.9900, 72 negative triangles
+151: dt=0.9900, 64 negative triangles
+152: dt=0.9900, 65 negative triangles
+153: dt=0.9900, 70 negative triangles
+154: dt=0.9900, 69 negative triangles
+155: dt=0.9900, 63 negative triangles
+156: dt=0.9900, 67 negative triangles
+157: dt=0.9900, 58 negative triangles
+158: dt=0.9900, 62 negative triangles
+159: dt=0.9900, 58 negative triangles
+160: dt=0.9900, 60 negative triangles
+161: dt=0.9900, 61 negative triangles
+162: dt=0.9900, 51 negative triangles
+163: dt=0.9900, 62 negative triangles
+164: dt=0.9900, 55 negative triangles
+165: dt=0.9900, 55 negative triangles
+166: dt=0.9900, 52 negative triangles
+167: dt=0.9900, 58 negative triangles
+168: dt=0.9900, 55 negative triangles
+169: dt=0.9900, 60 negative triangles
+170: dt=0.9900, 52 negative triangles
+171: dt=0.9900, 51 negative triangles
+172: dt=0.9405, 53 negative triangles
+173: dt=0.9405, 46 negative triangles
+174: dt=0.9405, 47 negative triangles
+175: dt=0.9405, 42 negative triangles
+176: dt=0.9405, 41 negative triangles
+177: dt=0.9405, 45 negative triangles
+178: dt=0.9405, 44 negative triangles
+179: dt=0.9405, 41 negative triangles
+180: dt=0.9405, 35 negative triangles
+181: dt=0.9405, 33 negative triangles
+182: dt=0.9405, 39 negative triangles
+183: dt=0.9405, 32 negative triangles
+184: dt=0.9405, 33 negative triangles
+185: dt=0.9405, 34 negative triangles
+186: dt=0.9405, 35 negative triangles
+187: dt=0.9405, 34 negative triangles
+188: dt=0.9405, 37 negative triangles
+189: dt=0.9405, 36 negative triangles
+190: dt=0.9405, 34 negative triangles
+191: dt=0.9405, 29 negative triangles
+192: dt=0.9405, 22 negative triangles
+193: dt=0.9405, 25 negative triangles
+194: dt=0.9405, 29 negative triangles
+195: dt=0.9405, 32 negative triangles
+196: dt=0.9405, 26 negative triangles
+197: dt=0.9405, 28 negative triangles
+198: dt=0.9405, 18 negative triangles
+199: dt=0.9405, 14 negative triangles
+200: dt=0.9405, 17 negative triangles
+201: dt=0.9405, 15 negative triangles
+202: dt=0.9405, 15 negative triangles
+203: dt=0.9405, 12 negative triangles
+204: dt=0.9405, 16 negative triangles
+205: dt=0.9405, 9 negative triangles
+206: dt=0.9405, 12 negative triangles
+207: dt=0.9405, 10 negative triangles
+208: dt=0.9405, 12 negative triangles
+209: dt=0.9405, 10 negative triangles
+210: dt=0.9405, 7 negative triangles
+211: dt=0.9405, 9 negative triangles
+212: dt=0.9405, 7 negative triangles
+213: dt=0.9405, 8 negative triangles
+214: dt=0.9405, 10 negative triangles
+215: dt=0.9405, 4 negative triangles
+216: dt=0.9405, 7 negative triangles
+217: dt=0.9405, 3 negative triangles
+218: dt=0.9405, 5 negative triangles
+219: dt=0.9405, 2 negative triangles
+220: dt=0.9405, 1 negative triangles
+writing spherical brain to ../surf/rh.sphere
+spherical transformation took 0.18 hours
+mris_sphere utimesec    3726.836000
+mris_sphere stimesec    8.228000
+mris_sphere ru_maxrss   455736
+mris_sphere ru_ixrss    0
+mris_sphere ru_idrss    0
+mris_sphere ru_isrss    0
+mris_sphere ru_minflt   5057579
+mris_sphere ru_majflt   0
+mris_sphere ru_nswap    0
+mris_sphere ru_inblock  0
+mris_sphere ru_oublock  14472
+mris_sphere ru_msgsnd   0
+mris_sphere ru_msgrcv   0
+mris_sphere ru_nsignals 0
+mris_sphere ru_nvcsw    319184
+mris_sphere ru_nivcsw   1788
+FSRUNTIME@ mris_sphere  0.1765 hours 1 threads
+#--------------------------------------------
+#@# Surf Reg rh Wed Jan 15 23:30:28 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_register -curv -rusage /out/freesurfer/sub-36/touch/rusage.mris_register.rh.dat ../surf/rh.sphere /opt/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif ../surf/rh.sphere.reg 
+
+using smoothwm curvature for final alignment
+
+cwd /out/freesurfer/sub-36/scripts
+cmdline mris_register -curv -rusage /out/freesurfer/sub-36/touch/rusage.mris_register.rh.dat ../surf/rh.sphere /opt/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif ../surf/rh.sphere.reg 
+
+0 inflated.H
+1 sulc
+2 smoothwm (computed)
+$Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading surface from ../surf/rh.sphere...
+reading template parameterization from /opt/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif...
+MRISregister() -------
+max_passes = 4 
+min_degrees = 0.500000 
+max_degrees = 64.000000 
+nangles = 8 
+tol=5.0e-01, sigma=0.0, host=b11c2, nav=1024, nbrs=1, l_extern=10000.000, l_parea=0.200, l_nlarea=1.000, l_corr=1.000, l_dist=5.000
+using quadratic fit line minimization
+complete_dist_mat 0
+rms 0
+smooth_averages 0
+remove_neg 0
+ico_order 0
+which_surface 0
+target_radius 0.000000
+nfields 0
+scale 0.000000
+desired_rms_height -1.000000
+momentum 0.950000
+nbhd_size -10
+max_nbrs 10
+niterations 25
+nsurfaces 0
+SURFACES 3
+flags 16 (10)
+use curv 16
+no sulc 0
+no rigid align 0
+mris->nsize 1
+mris->hemisphere 1
+randomSeed 0
+
+tol=5.0e-01, sigma=0.0, host=b11c2, nav=1024, nbrs=1, l_extern=10000.000, l_parea=0.200, l_nlarea=1.000, l_corr=1.000, l_dist=5.000
+using quadratic fit line minimization
+--------------------
+1 Reading rh.sulc
+curvature mean = 0.000, std = 6.586
+curvature mean = 0.029, std = 0.817
+curvature mean = 0.020, std = 0.907
+Starting MRISrigidBodyAlignGlobal()
+  d=64.00 min @ (0.00, -16.00, 0.00) sse = 443241.8, tmin=1.2520
+  d=32.00 min @ (8.00, 0.00, 0.00) sse = 394007.5, tmin=2.5179
+  d=16.00 min @ (0.00, 4.00, 0.00) sse = 370649.9, tmin=3.8055
+  d=8.00 min @ (0.00, 0.00, -2.00) sse = 369093.7, tmin=5.0928
+  d=4.00 min @ (0.00, 0.00, 1.00) sse = 368208.0, tmin=6.3864
+  d=2.00 min @ (-0.50, 0.00, -0.50) sse = 368057.8, tmin=7.6909
+  d=1.00 min @ (0.25, 0.00, 0.25) sse = 367979.2, tmin=9.0799
+  d=0.50 min @ (-0.12, -0.12, 0.00) sse = 367949.7, tmin=10.4980
+tol=1.0e+00, sigma=0.5, host=b11c2, nav=1024, nbrs=1, l_extern=10000.000, l_parea=0.200, l_nlarea=1.000, l_corr=0.050, l_spring=0.500, l_dist=5.000
+using quadratic fit line minimization
+MRISrigidBodyAlignGlobal() done  10.50 min
+curvature mean = -0.002, std = 0.857
+curvature mean = 0.006, std = 0.963
+curvature mean = -0.008, std = 0.867
+curvature mean = 0.002, std = 0.986
+curvature mean = -0.010, std = 0.869
+curvature mean = 0.000, std = 0.994
+2 Reading smoothwm
+curvature mean = -0.045, std = 0.337
+curvature mean = 0.034, std = 0.239
+curvature mean = 0.053, std = 0.330
+curvature mean = 0.028, std = 0.296
+curvature mean = 0.030, std = 0.503
+curvature mean = 0.028, std = 0.321
+curvature mean = 0.017, std = 0.642
+curvature mean = 0.028, std = 0.332
+curvature mean = 0.007, std = 0.750
+MRISregister() return, current seed 0
+-01: dt=0.0000, 105 negative triangles
+119: dt=0.9900, 105 negative triangles
+120: dt=0.9405, 137 negative triangles
+expanding nbhd size to 1
+121: dt=0.9900, 119 negative triangles
+122: dt=0.9900, 106 negative triangles
+123: dt=0.9900, 95 negative triangles
+124: dt=0.9900, 93 negative triangles
+125: dt=0.9900, 88 negative triangles
+126: dt=0.9900, 82 negative triangles
+127: dt=0.9900, 76 negative triangles
+128: dt=0.9900, 79 negative triangles
+129: dt=0.9900, 71 negative triangles
+130: dt=0.9900, 68 negative triangles
+131: dt=0.9900, 66 negative triangles
+132: dt=0.9900, 62 negative triangles
+133: dt=0.9900, 62 negative triangles
+134: dt=0.9900, 63 negative triangles
+135: dt=0.9900, 59 negative triangles
+136: dt=0.9900, 61 negative triangles
+137: dt=0.9900, 58 negative triangles
+138: dt=0.9900, 58 negative triangles
+139: dt=0.9900, 54 negative triangles
+140: dt=0.9900, 52 negative triangles
+141: dt=0.9900, 50 negative triangles
+142: dt=0.9900, 47 negative triangles
+143: dt=0.9900, 47 negative triangles
+144: dt=0.9900, 47 negative triangles
+145: dt=0.9900, 44 negative triangles
+146: dt=0.9900, 40 negative triangles
+147: dt=0.9900, 38 negative triangles
+148: dt=0.9900, 33 negative triangles
+149: dt=0.9900, 35 negative triangles
+150: dt=0.9900, 29 negative triangles
+151: dt=0.9900, 29 negative triangles
+152: dt=0.9900, 28 negative triangles
+153: dt=0.9900, 27 negative triangles
+154: dt=0.9900, 25 negative triangles
+155: dt=0.9900, 27 negative triangles
+156: dt=0.9900, 26 negative triangles
+157: dt=0.9900, 25 negative triangles
+158: dt=0.9900, 23 negative triangles
+159: dt=0.9900, 18 negative triangles
+160: dt=0.9900, 18 negative triangles
+161: dt=0.9900, 16 negative triangles
+162: dt=0.9900, 17 negative triangles
+163: dt=0.9900, 22 negative triangles
+164: dt=0.9900, 22 negative triangles
+165: dt=0.9900, 17 negative triangles
+166: dt=0.9900, 15 negative triangles
+167: dt=0.9900, 13 negative triangles
+168: dt=0.9900, 13 negative triangles
+169: dt=0.9900, 16 negative triangles
+170: dt=0.9900, 15 negative triangles
+171: dt=0.9900, 13 negative triangles
+172: dt=0.9900, 12 negative triangles
+173: dt=0.9900, 11 negative triangles
+174: dt=0.9900, 11 negative triangles
+175: dt=0.9900, 9 negative triangles
+176: dt=0.9900, 12 negative triangles
+177: dt=0.9900, 8 negative triangles
+178: dt=0.9900, 8 negative triangles
+179: dt=0.9900, 4 negative triangles
+180: dt=0.9900, 4 negative triangles
+181: dt=0.9900, 2 negative triangles
+182: dt=0.9900, 1 negative triangles
+writing registered surface to ../surf/rh.sphere.reg...
+registration took 0.66 hours
+mris_register utimesec    10976.976000
+mris_register stimesec    33.904000
+mris_register ru_maxrss   382732
+mris_register ru_ixrss    0
+mris_register ru_idrss    0
+mris_register ru_isrss    0
+mris_register ru_minflt   15831515
+mris_register ru_majflt   0
+mris_register ru_nswap    0
+mris_register ru_inblock  0
+mris_register ru_oublock  14472
+mris_register ru_msgsnd   0
+mris_register ru_msgrcv   0
+mris_register ru_nsignals 0
+mris_register ru_nvcsw    1074485
+mris_register ru_nivcsw   6397
+FSRUNTIME@ mris_register  0.6623 hours 1 threads
+#--------------------------------------------
+#@# Jacobian white rh Thu Jan 16 00:10:12 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_jacobian ../surf/rh.white.preaparc ../surf/rh.sphere.reg ../surf/rh.jacobian_white 
+
+reading surface from ../surf/rh.white.preaparc...
+writing curvature file ../surf/rh.jacobian_white
+#--------------------------------------------
+#@# AvgCurv rh Thu Jan 16 00:10:15 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mrisp_paint -a 5 /opt/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif#6 ../surf/rh.sphere.reg ../surf/rh.avg_curv 
+
+averaging curvature patterns 5 times...
+reading surface from ../surf/rh.sphere.reg...
+reading template parameterization from /opt/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif...
+writing curvature file to ../surf/rh.avg_curv...
+#-----------------------------------------
+#@# Cortical Parc rh Thu Jan 16 00:10:17 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-36 rh ../surf/rh.sphere.reg /opt/freesurfer/average/rh.DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.annot 
+
+setting seed for random number generator to 1234
+using ../mri/aseg.presurf.mgz aseg volume to correct midline
+$Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading atlas from /opt/freesurfer/average/rh.DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs...
+reading color table from GCSA file....
+average std = 0.7   using min determinant for regularization = 0.004
+0 singular and 309 ill-conditioned covariance matrices regularized
+input 0: MEAN CURVATURE, flags 0, avgs 5, name mean_curvature
+labeling surface...
+1683 labels changed using aseg
+relabeling using gibbs priors...
+000:   3859 changed, 205711 examined...
+001:    908 changed, 16406 examined...
+002:    215 changed, 5020 examined...
+003:     73 changed, 1278 examined...
+004:     21 changed, 430 examined...
+005:     12 changed, 134 examined...
+006:      4 changed, 73 examined...
+007:      1 changed, 30 examined...
+008:      0 changed, 7 examined...
+182 labels changed using aseg
+000: 125 total segments, 88 labels (462 vertices) changed
+001: 38 total segments, 1 labels (2 vertices) changed
+002: 37 total segments, 0 labels (0 vertices) changed
+10 filter iterations complete (10 requested, 6 changed)
+rationalizing unknown annotations with cortex label
+relabeling unknown label...
+relabeling corpuscallosum label...
+1700 vertices marked for relabeling...
+1700 labels changed in reclassification.
+writing output to ../label/rh.aparc.annot...
+classification took 0 minutes and 16 seconds.
+#--------------------------------------------
+#@# Make Pial Surf rh Thu Jan 16 00:10:33 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_make_surfaces -orig_white white.preaparc -orig_pial white.preaparc -aseg ../mri/aseg.presurf -mgz -T1 brain.finalsurfs sub-36 rh 
+
+using white.preaparc starting white location...
+using white.preaparc starting pial locations...
+using aseg volume ../mri/aseg.presurf to prevent surfaces crossing the midline
+INFO: assuming MGZ format for volumes.
+using brain.finalsurfs as T1 volume...
+$Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $
+$Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading volume /out/freesurfer/sub-36/mri/filled.mgz...
+reading volume /out/freesurfer/sub-36/mri/brain.finalsurfs.mgz...
+reading volume /out/freesurfer/sub-36/mri/../mri/aseg.presurf.mgz...
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+28259 bright wm thresholded.
+6 bright non-wm voxels segmented.
+reading original surface position from /out/freesurfer/sub-36/surf/rh.orig...
+computing class statistics...
+border white:    421270 voxels (1.29%)
+border gray      435261 voxels (1.33%)
+WM (98.0): 99.0 +- 6.6 [70.0 --> 110.0]
+GM (81.0) : 80.4 +- 8.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 68.3 (was 70)
+setting MAX_BORDER_WHITE to 112.6 (was 105)
+setting MIN_BORDER_WHITE to 77.0 (was 85)
+setting MAX_CSF to 59.5 (was 40)
+setting MAX_GRAY to 99.4 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 68.3 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 50.8 (was 40)
+spring scale = 1.25
+using class modes intead of means, discounting robust sigmas....
+intensity peaks found at WM=106+-6.1,    GM=77+-7.0
+mean inside = 97.2, mean outside = 81.8
+smoothing surface for 5 iterations...
+reading initial white vertex positions from white.preaparc...
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+repositioning cortical surface to gray/white boundary
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.70 +- 0.20 (0.01-->7.19) (max @ vno 90908 --> 97164)
+face area 0.20 +- 0.11 (0.00-->11.65)
+mean absolute distance = 1.35 +- 1.43
+6049 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+inhibiting deformation at non-cortical midline structures...
+removing 4 vertex label from ripped group
+deleting segment 2 with 4 points - only 0.00% unknown
+deleting segment 3 with 335 points - only 0.00% unknown
+removing 2 vertex label from ripped group
+deleting segment 4 with 2 points - only 0.00% unknown
+removing 1 vertex label from ripped group
+deleting segment 5 with 1 points - only 0.00% unknown
+deleting segment 6 with 63 points - only 0.00% unknown
+deleting segment 7 with 12 points - only 0.00% unknown
+mean border=94.8, 230 (230) missing vertices, mean dist -0.5 [2.4 (%39.2)->0.6 (%60.8))]
+%46 local maxima, %37 large gradients and %12 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=4, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+complete_dist_mat 0
+rms 0
+smooth_averages 0
+remove_neg 0
+ico_order 0
+which_surface 0
+target_radius 0.000000
+nfields 0
+scale 0.000000
+desired_rms_height 0.000000
+momentum 0.000000
+nbhd_size 0
+max_nbrs 0
+niterations 25
+nsurfaces 0
+SURFACES 3
+flags 0 (0)
+use curv 0
+no sulc 0
+no rigid align 0
+mris->nsize 2
+mris->hemisphere 1
+randomSeed 0
+
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.71 +- 0.20 (0.02-->7.31) (max @ vno 97164 --> 90908)
+face area 0.20 +- 0.11 (0.00-->11.37)
+mean absolute distance = 0.63 +- 0.82
+6315 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=2030779.0, rms=5.223
+001: dt: 0.5000, sse=1328722.5, rms=2.864 (45.165%)
+002: dt: 0.5000, sse=1192453.8, rms=2.254 (21.309%)
+rms = 2.21, time step reduction 1 of 3 to 0.250...
+003: dt: 0.5000, sse=1165580.8, rms=2.207 (2.086%)
+004: dt: 0.2500, sse=1083507.5, rms=1.353 (38.667%)
+005: dt: 0.2500, sse=1038635.4, rms=1.192 (11.923%)
+rms = 1.16, time step reduction 2 of 3 to 0.125...
+006: dt: 0.2500, sse=1028866.8, rms=1.157 (2.934%)
+rms = 1.14, time step reduction 3 of 3 to 0.062...
+007: dt: 0.1250, sse=1025455.3, rms=1.137 (1.751%)
+positioning took 0.8 minutes
+inhibiting deformation at non-cortical midline structures...
+deleting segment 0 with 6 points - only 0.00% unknown
+removing 3 vertex label from ripped group
+deleting segment 1 with 3 points - only 0.00% unknown
+removing 3 vertex label from ripped group
+deleting segment 2 with 3 points - only 0.00% unknown
+deleting segment 3 with 349 points - only 0.00% unknown
+deleting segment 5 with 56 points - only 0.00% unknown
+deleting segment 6 with 8 points - only 0.00% unknown
+mean border=93.8, 234 (82) missing vertices, mean dist -0.1 [1.0 (%38.3)->0.4 (%61.7))]
+%78 local maxima, %15 large gradients and % 3 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=1.0, host=b11c2, nav=2, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.69 +- 0.20 (0.02-->7.42) (max @ vno 97164 --> 90908)
+face area 0.21 +- 0.11 (0.00-->11.97)
+mean absolute distance = 0.40 +- 0.62
+8371 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=1623931.5, rms=3.988
+008: dt: 0.5000, sse=1240280.1, rms=2.385 (40.189%)
+009: dt: 0.5000, sse=1174015.5, rms=2.130 (10.682%)
+rms = 2.26, time step reduction 1 of 3 to 0.250...
+010: dt: 0.2500, sse=1061926.6, rms=1.463 (31.318%)
+011: dt: 0.2500, sse=1035226.2, rms=1.088 (25.665%)
+012: dt: 0.2500, sse=1025071.9, rms=1.007 (7.429%)
+rms = 0.98, time step reduction 2 of 3 to 0.125...
+013: dt: 0.2500, sse=1026462.8, rms=0.982 (2.425%)
+rms = 0.96, time step reduction 3 of 3 to 0.062...
+014: dt: 0.1250, sse=1046081.6, rms=0.961 (2.160%)
+positioning took 0.9 minutes
+inhibiting deformation at non-cortical midline structures...
+deleting segment 0 with 5 points - only 0.00% unknown
+removing 3 vertex label from ripped group
+deleting segment 1 with 3 points - only 0.00% unknown
+deleting segment 2 with 286 points - only 0.00% unknown
+removing 4 vertex label from ripped group
+deleting segment 4 with 51 points - only 0.00% unknown
+deleting segment 5 with 19 points - only 0.00% unknown
+mean border=93.9, 190 (38) missing vertices, mean dist -0.1 [0.6 (%42.2)->0.2 (%57.8))]
+%86 local maxima, % 9 large gradients and % 1 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=0.5, host=b11c2, nav=1, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.69 +- 0.19 (0.03-->7.47) (max @ vno 97164 --> 90908)
+face area 0.20 +- 0.11 (0.00-->11.65)
+mean absolute distance = 0.32 +- 0.51
+7214 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=1167570.9, rms=2.163
+015: dt: 0.5000, sse=1082833.9, rms=1.635 (24.413%)
+rms = 1.76, time step reduction 1 of 3 to 0.250...
+016: dt: 0.2500, sse=1022926.8, rms=1.189 (27.247%)
+017: dt: 0.2500, sse=1005004.8, rms=0.976 (17.945%)
+rms = 0.93, time step reduction 2 of 3 to 0.125...
+018: dt: 0.2500, sse=1005884.3, rms=0.928 (4.957%)
+rms = 0.90, time step reduction 3 of 3 to 0.062...
+019: dt: 0.1250, sse=995895.2, rms=0.901 (2.813%)
+positioning took 0.6 minutes
+inhibiting deformation at non-cortical midline structures...
+removing 4 vertex label from ripped group
+deleting segment 0 with 4 points - only 0.00% unknown
+removing 4 vertex label from ripped group
+deleting segment 1 with 4 points - only 0.00% unknown
+deleting segment 2 with 285 points - only 0.00% unknown
+deleting segment 3 with 51 points - only 0.00% unknown
+removing 2 vertex label from ripped group
+deleting segment 5 with 2 points - only 0.00% unknown
+deleting segment 6 with 14 points - only 0.00% unknown
+removing 2 vertex label from ripped group
+deleting segment 7 with 2 points - only 0.00% unknown
+mean border=93.8, 199 (24) missing vertices, mean dist -0.1 [0.5 (%40.5)->0.2 (%59.5))]
+%89 local maxima, % 6 large gradients and % 0 min vals, 0 gradients ignored
+tol=1.0e-04, sigma=0.2, host=b11c2, nav=0, nbrs=2, l_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+writing white matter surface to /out/freesurfer/sub-36/surf/rh.white...
+writing smoothed curvature to rh.curv
+000: dt: 0.0000, sse=1056662.0, rms=1.542
+020: dt: 0.5000, sse=1017457.5, rms=1.180 (23.466%)
+rms = 1.51, time step reduction 1 of 3 to 0.250...
+021: dt: 0.2500, sse=973654.5, rms=0.854 (27.659%)
+022: dt: 0.2500, sse=987135.3, rms=0.783 (8.275%)
+rms = 0.75, time step reduction 2 of 3 to 0.125...
+023: dt: 0.2500, sse=987030.2, rms=0.746 (4.774%)
+rms = 0.73, time step reduction 3 of 3 to 0.062...
+024: dt: 0.1250, sse=986358.2, rms=0.734 (1.499%)
+positioning took 0.6 minutes
+generating cortex label...
+13 non-cortical segments detected
+only using segment with 10481 vertices
+erasing segment 0 (vno[0] = 57739)
+erasing segment 1 (vno[0] = 63312)
+erasing segment 3 (vno[0] = 128188)
+erasing segment 4 (vno[0] = 130856)
+erasing segment 5 (vno[0] = 133832)
+erasing segment 6 (vno[0] = 142450)
+erasing segment 7 (vno[0] = 150679)
+erasing segment 8 (vno[0] = 150825)
+erasing segment 9 (vno[0] = 152003)
+erasing segment 10 (vno[0] = 152114)
+erasing segment 11 (vno[0] = 156881)
+erasing segment 12 (vno[0] = 167689)
+writing cortex label to /out/freesurfer/sub-36/label/rh.cortex.label...
+writing curvature file /out/freesurfer/sub-36/surf/rh.curv
+writing smoothed area to rh.area
+writing curvature file /out/freesurfer/sub-36/surf/rh.area
+vertex spacing 0.70 +- 0.20 (0.03-->7.51) (max @ vno 90908 --> 97164)
+face area 0.20 +- 0.11 (0.00-->11.62)
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+inhibiting deformation at non-cortical midline structures...
+removing 2 vertex label from ripped group
+deleting segment 0 with 2 points - only 0.00% unknown
+deleting segment 1 with 7 points - only 0.00% unknown
+deleting segment 2 with 29 points - only 0.00% unknown
+removing 2 vertex label from ripped group
+deleting segment 3 with 2 points - only 0.00% unknown
+deleting segment 4 with 53 points - only 0.00% unknown
+removing 1 vertex label from ripped group
+deleting segment 5 with 1 points - only 0.00% unknown
+deleting segment 6 with 21 points - only 0.00% unknown
+removing 2 vertex label from ripped group
+deleting segment 8 with 2 points - only 0.00% unknown
+removing 1 vertex label from ripped group
+deleting segment 9 with 1 points - only 0.00% unknown
+deleting segment 10 with 5 points - only 20.00% unknown
+smoothing surface for 5 iterations...
+reading initial pial vertex positions from white.preaparc...
+mean border=72.5, 254 (254) missing vertices, mean dist 1.2 [0.2 (%0.0)->1.7 (%100.0))]
+%19 local maxima, %46 large gradients and %31 min vals, 262 gradients ignored
+perforing initial smooth deformation to move away from white surface
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=16, nbrs=2, l_surf_repulse=1.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.05
+000: dt: 0.0000, sse=20138190.0, rms=22.089
+001: dt: 0.0500, sse=16428192.0, rms=19.842 (10.173%)
+002: dt: 0.0500, sse=14361899.0, rms=18.472 (6.905%)
+003: dt: 0.0500, sse=12956601.0, rms=17.478 (5.378%)
+004: dt: 0.0500, sse=11892976.0, rms=16.687 (4.527%)
+005: dt: 0.0500, sse=11032967.0, rms=16.019 (4.006%)
+006: dt: 0.0500, sse=10307370.0, rms=15.432 (3.662%)
+007: dt: 0.0500, sse=9676464.0, rms=14.903 (3.428%)
+008: dt: 0.0500, sse=9116065.0, rms=14.417 (3.263%)
+009: dt: 0.0500, sse=8610892.0, rms=13.964 (3.142%)
+010: dt: 0.0500, sse=8151212.5, rms=13.538 (3.047%)
+positioning took 1.1 minutes
+mean border=69.5, 146 (98) missing vertices, mean dist 1.0 [0.1 (%0.1)->1.4 (%99.9))]
+%20 local maxima, %46 large gradients and %30 min vals, 289 gradients ignored
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=16, nbrs=2, l_surf_repulse=1.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.05
+000: dt: 0.0000, sse=13041520.0, rms=17.534
+011: dt: 0.0500, sse=12533863.0, rms=17.162 (2.123%)
+012: dt: 0.0500, sse=12070392.0, rms=16.815 (2.023%)
+013: dt: 0.0500, sse=11645601.0, rms=16.490 (1.931%)
+014: dt: 0.0500, sse=11255521.0, rms=16.186 (1.843%)
+015: dt: 0.0500, sse=10896544.0, rms=15.901 (1.761%)
+016: dt: 0.0500, sse=10564129.0, rms=15.633 (1.689%)
+017: dt: 0.0500, sse=10255603.0, rms=15.379 (1.622%)
+018: dt: 0.0500, sse=9965360.0, rms=15.136 (1.577%)
+019: dt: 0.0500, sse=9688168.0, rms=14.901 (1.555%)
+020: dt: 0.0500, sse=9421110.0, rms=14.671 (1.545%)
+positioning took 1.1 minutes
+mean border=68.2, 147 (73) missing vertices, mean dist 0.9 [0.0 (%2.2)->1.4 (%97.8))]
+%20 local maxima, %45 large gradients and %30 min vals, 328 gradients ignored
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=16, nbrs=2, l_surf_repulse=1.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.05
+000: dt: 0.0000, sse=10281653.0, rms=15.403
+021: dt: 0.0500, sse=9980344.0, rms=15.151 (1.635%)
+022: dt: 0.0500, sse=9697310.0, rms=14.911 (1.587%)
+023: dt: 0.0500, sse=9432445.0, rms=14.682 (1.533%)
+024: dt: 0.0500, sse=9183366.0, rms=14.464 (1.487%)
+025: dt: 0.0500, sse=8948413.0, rms=14.255 (1.446%)
+026: dt: 0.0500, sse=8725505.0, rms=14.053 (1.413%)
+027: dt: 0.0500, sse=8511843.0, rms=13.857 (1.394%)
+028: dt: 0.0500, sse=8305745.0, rms=13.666 (1.383%)
+029: dt: 0.0500, sse=8105726.0, rms=13.477 (1.380%)
+030: dt: 0.0500, sse=7910615.5, rms=13.290 (1.384%)
+positioning took 1.1 minutes
+mean border=67.4, 164 (60) missing vertices, mean dist 0.8 [0.0 (%10.9)->1.3 (%89.1))]
+%20 local maxima, %46 large gradients and %30 min vals, 300 gradients ignored
+tol=1.0e-04, sigma=2.0, host=b11c2, nav=16, nbrs=2, l_surf_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=8469389.0, rms=13.811
+031: dt: 0.5000, sse=6976827.0, rms=12.352 (10.565%)
+032: dt: 0.5000, sse=5782040.0, rms=11.045 (10.580%)
+033: dt: 0.5000, sse=4729577.0, rms=9.762 (11.619%)
+034: dt: 0.5000, sse=3880119.0, rms=8.575 (12.160%)
+035: dt: 0.5000, sse=3211401.5, rms=7.518 (12.325%)
+036: dt: 0.5000, sse=2751738.2, rms=6.691 (10.996%)
+037: dt: 0.5000, sse=2449178.5, rms=6.090 (8.991%)
+038: dt: 0.5000, sse=2281921.8, rms=5.727 (5.953%)
+039: dt: 0.5000, sse=2192193.0, rms=5.525 (3.524%)
+040: dt: 0.5000, sse=2142120.2, rms=5.407 (2.132%)
+041: dt: 0.5000, sse=2106991.5, rms=5.324 (1.533%)
+042: dt: 0.5000, sse=2083502.9, rms=5.267 (1.076%)
+rms = 5.22, time step reduction 1 of 3 to 0.250...
+043: dt: 0.5000, sse=2066084.4, rms=5.225 (0.808%)
+044: dt: 0.2500, sse=1932971.5, rms=4.829 (7.565%)
+045: dt: 0.2500, sse=1900274.4, rms=4.740 (1.856%)
+rms = 4.75, time step reduction 2 of 3 to 0.125...
+rms = 4.70, time step reduction 3 of 3 to 0.062...
+046: dt: 0.1250, sse=1887152.2, rms=4.701 (0.822%)
+positioning took 2.3 minutes
+mean border=65.2, 2514 (38) missing vertices, mean dist 0.3 [0.1 (%47.4)->0.8 (%52.6))]
+%36 local maxima, %31 large gradients and %27 min vals, 167 gradients ignored
+tol=1.0e-04, sigma=1.0, host=b11c2, nav=8, nbrs=2, l_surf_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=2782213.2, rms=6.162
+047: dt: 0.5000, sse=2550966.5, rms=5.639 (8.495%)
+048: dt: 0.5000, sse=2312840.0, rms=5.073 (10.033%)
+049: dt: 0.5000, sse=2237455.8, rms=4.879 (3.815%)
+050: dt: 0.5000, sse=2054971.9, rms=4.374 (10.358%)
+051: dt: 0.5000, sse=2010670.6, rms=4.240 (3.058%)
+052: dt: 0.5000, sse=1876825.0, rms=3.814 (10.055%)
+rms = 3.85, time step reduction 1 of 3 to 0.250...
+053: dt: 0.2500, sse=1704306.0, rms=3.072 (19.442%)
+054: dt: 0.2500, sse=1636257.9, rms=2.723 (11.380%)
+055: dt: 0.2500, sse=1617599.2, rms=2.625 (3.603%)
+056: dt: 0.2500, sse=1603404.5, rms=2.552 (2.772%)
+rms = 2.52, time step reduction 2 of 3 to 0.125...
+057: dt: 0.2500, sse=1596690.8, rms=2.519 (1.298%)
+058: dt: 0.1250, sse=1551165.8, rms=2.254 (10.503%)
+rms = 2.21, time step reduction 3 of 3 to 0.062...
+059: dt: 0.1250, sse=1543685.0, rms=2.212 (1.876%)
+positioning took 2.3 minutes
+mean border=64.1, 3134 (28) missing vertices, mean dist 0.1 [0.1 (%53.5)->0.4 (%46.5))]
+%46 local maxima, %22 large gradients and %26 min vals, 121 gradients ignored
+tol=1.0e-04, sigma=0.5, host=b11c2, nav=4, nbrs=2, l_surf_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+000: dt: 0.0000, sse=1744180.8, rms=3.067
+rms = 3.20, time step reduction 1 of 3 to 0.250...
+060: dt: 0.2500, sse=1677981.6, rms=2.760 (9.995%)
+061: dt: 0.2500, sse=1635296.2, rms=2.541 (7.932%)
+062: dt: 0.2500, sse=1621606.9, rms=2.480 (2.399%)
+rms = 2.46, time step reduction 2 of 3 to 0.125...
+063: dt: 0.2500, sse=1616232.5, rms=2.457 (0.950%)
+064: dt: 0.1250, sse=1588904.8, rms=2.297 (6.529%)
+rms = 2.25, time step reduction 3 of 3 to 0.062...
+065: dt: 0.1250, sse=1580117.8, rms=2.250 (2.041%)
+positioning took 1.2 minutes
+mean border=63.7, 6252 (28) missing vertices, mean dist 0.0 [0.1 (%59.6)->0.3 (%40.4))]
+%50 local maxima, %18 large gradients and %25 min vals, 134 gradients ignored
+tol=1.0e-04, sigma=0.2, host=b11c2, nav=2, nbrs=2, l_surf_repulse=5.000, l_tspring=1.562, l_nspring=0.625, l_intensity=0.200, l_curv=1.000
+mom=0.00, dt=0.50
+writing pial surface to /out/freesurfer/sub-36/surf/rh.pial...
+writing smoothed curvature to rh.curv.pial
+000: dt: 0.0000, sse=1614701.5, rms=2.392
+rms = 2.61, time step reduction 1 of 3 to 0.250...
+066: dt: 0.2500, sse=1597268.1, rms=2.291 (4.205%)
+067: dt: 0.2500, sse=1583598.5, rms=2.231 (2.621%)
+rms = 2.23, time step reduction 2 of 3 to 0.125...
+068: dt: 0.2500, sse=1581063.6, rms=2.228 (0.131%)
+069: dt: 0.1250, sse=1566475.1, rms=2.134 (4.236%)
+rms = 2.11, time step reduction 3 of 3 to 0.062...
+070: dt: 0.1250, sse=1561295.8, rms=2.108 (1.231%)
+positioning took 1.0 minutes
+writing curvature file /out/freesurfer/sub-36/surf/rh.curv.pial
+writing smoothed area to rh.area.pial
+writing curvature file /out/freesurfer/sub-36/surf/rh.area.pial
+vertex spacing 0.81 +- 0.36 (0.02-->6.80) (max @ vno 144903 --> 143650)
+face area 0.26 +- 0.21 (0.00-->11.63)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+0 of 205711 vertices processed
+25000 of 205711 vertices processed
+50000 of 205711 vertices processed
+75000 of 205711 vertices processed
+100000 of 205711 vertices processed
+125000 of 205711 vertices processed
+150000 of 205711 vertices processed
+175000 of 205711 vertices processed
+200000 of 205711 vertices processed
+0 of 205711 vertices processed
+25000 of 205711 vertices processed
+50000 of 205711 vertices processed
+75000 of 205711 vertices processed
+100000 of 205711 vertices processed
+125000 of 205711 vertices processed
+150000 of 205711 vertices processed
+175000 of 205711 vertices processed
+200000 of 205711 vertices processed
+thickness calculation complete, 157:814 truncations.
+30723 vertices at 0 distance
+107293 vertices at 1 distance
+122623 vertices at 2 distance
+77024 vertices at 3 distance
+35918 vertices at 4 distance
+13557 vertices at 5 distance
+4317 vertices at 6 distance
+1343 vertices at 7 distance
+493 vertices at 8 distance
+203 vertices at 9 distance
+97 vertices at 10 distance
+56 vertices at 11 distance
+45 vertices at 12 distance
+40 vertices at 13 distance
+35 vertices at 14 distance
+41 vertices at 15 distance
+30 vertices at 16 distance
+26 vertices at 17 distance
+17 vertices at 18 distance
+14 vertices at 19 distance
+17 vertices at 20 distance
+writing curvature file /out/freesurfer/sub-36/surf/rh.thickness
+positioning took 17.5 minutes
+#--------------------------------------------
+#@# Surf Volume rh Thu Jan 16 00:28:01 UTC 2020
+/out/freesurfer/sub-36/surf
+/out/freesurfer/sub-36/surf
+mris_calc -o rh.area.mid rh.area add rh.area.pial
+Saving result to 'rh.area.mid' (type = MRI_CURV_FILE)                       [ ok ]
+mris_calc -o rh.area.mid rh.area.mid div 2
+Saving result to 'rh.area.mid' (type = MRI_CURV_FILE)                       [ ok ]
+mris_convert --volume sub-36 rh /out/freesurfer/sub-36/surf/rh.volume
+masking with /out/freesurfer/sub-36/label/rh.cortex.label
+Total face volume 238305
+Total vertex volume 235511 (mask=0)
+#@# sub-36 rh 235511
+ 
+vertexvol Done
+#-----------------------------------------
+#@# Cortical Parc 2 rh Thu Jan 16 00:28:06 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-36 rh ../surf/rh.sphere.reg /opt/freesurfer/average/rh.CDaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.a2009s.annot 
+
+setting seed for random number generator to 1234
+using ../mri/aseg.presurf.mgz aseg volume to correct midline
+$Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading atlas from /opt/freesurfer/average/rh.CDaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs...
+reading color table from GCSA file....
+average std = 1.4   using min determinant for regularization = 0.020
+0 singular and 719 ill-conditioned covariance matrices regularized
+input 0: MEAN CURVATURE, flags 0, avgs 5, name mean_curvature
+labeling surface...
+4 labels changed using aseg
+relabeling using gibbs priors...
+000:  12575 changed, 205711 examined...
+001:   2906 changed, 48729 examined...
+002:    889 changed, 15177 examined...
+003:    365 changed, 4890 examined...
+004:    173 changed, 2116 examined...
+005:     81 changed, 973 examined...
+006:     42 changed, 466 examined...
+007:     21 changed, 254 examined...
+008:     10 changed, 132 examined...
+009:      4 changed, 50 examined...
+010:      2 changed, 25 examined...
+011:      3 changed, 17 examined...
+012:      1 changed, 11 examined...
+013:      0 changed, 5 examined...
+2 labels changed using aseg
+000: 354 total segments, 268 labels (4080 vertices) changed
+001: 100 total segments, 15 labels (41 vertices) changed
+002: 85 total segments, 0 labels (0 vertices) changed
+10 filter iterations complete (10 requested, 60 changed)
+rationalizing unknown annotations with cortex label
+relabeling Medial_wall label...
+1275 vertices marked for relabeling...
+1275 labels changed in reclassification.
+writing output to ../label/rh.aparc.a2009s.annot...
+classification took 0 minutes and 22 seconds.
+#-----------------------------------------
+#@# Cortical Parc 3 rh Thu Jan 16 00:28:28 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-36 rh ../surf/rh.sphere.reg /opt/freesurfer/average/rh.DKTaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.DKTatlas.annot 
+
+setting seed for random number generator to 1234
+using ../mri/aseg.presurf.mgz aseg volume to correct midline
+$Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $
+  $Id: mrisurf.c,v 1.781.2.6 2016/12/27 16:47:14 zkaufman Exp $
+reading atlas from /opt/freesurfer/average/rh.DKTaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs...
+reading color table from GCSA file....
+average std = 0.9   using min determinant for regularization = 0.009
+0 singular and 325 ill-conditioned covariance matrices regularized
+input 0: MEAN CURVATURE, flags 0, avgs 5, name mean_curvature
+labeling surface...
+1552 labels changed using aseg
+relabeling using gibbs priors...
+000:   2719 changed, 205711 examined...
+001:    631 changed, 12449 examined...
+002:    170 changed, 3520 examined...
+003:     51 changed, 1007 examined...
+004:     31 changed, 304 examined...
+005:     22 changed, 178 examined...
+006:     17 changed, 120 examined...
+007:     16 changed, 85 examined...
+008:     13 changed, 69 examined...
+009:      6 changed, 55 examined...
+010:      7 changed, 32 examined...
+011:      6 changed, 36 examined...
+012:      2 changed, 29 examined...
+013:      4 changed, 14 examined...
+014:      3 changed, 20 examined...
+015:      0 changed, 17 examined...
+248 labels changed using aseg
+000: 66 total segments, 33 labels (396 vertices) changed
+001: 33 total segments, 0 labels (0 vertices) changed
+10 filter iterations complete (10 requested, 9 changed)
+rationalizing unknown annotations with cortex label
+relabeling unknown label...
+relabeling corpuscallosum label...
+1058 vertices marked for relabeling...
+1058 labels changed in reclassification.
+writing output to ../label/rh.aparc.DKTatlas.annot...
+classification took 0 minutes and 18 seconds.
+#-----------------------------------------
+#@# WM/GM Contrast rh Thu Jan 16 00:28:46 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ pctsurfcon --s sub-36 --rh-only 
+
+Log file is /out/freesurfer/sub-36/scripts/pctsurfcon.log
+Thu Jan 16 00:28:47 UTC 2020
+setenv SUBJECTS_DIR /out/freesurfer
+cd /out/freesurfer/sub-36/scripts
+/opt/freesurfer/bin/pctsurfcon
+$Id: pctsurfcon,v 1.15 2016/02/12 21:43:15 zkaufman Exp $
+Linux b11c2c40da5f 4.4.0-170-generic #199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+mri_vol2surf --mov /out/freesurfer/sub-36/mri/rawavg.mgz --hemi rh --noreshape --interp trilinear --projdist -1 --o /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.wm.mgh --regheader sub-36 --cortex
+srcvol = /out/freesurfer/sub-36/mri/rawavg.mgz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = rh
+ProjDist = -1
+reshape = 0
+interp = trilinear
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using /out/freesurfer/sub-36/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-0.99873  -0.02765  -0.04205   0.00002;
+-0.04433   0.08788   0.99514   0.00000;
+ 0.02382  -0.99575   0.08899   0.00003;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Loading label /out/freesurfer/sub-36/label/rh.cortex.label
+Reading surface /out/freesurfer/sub-36/surf/rh.white
+Done reading source surface
+Mapping Source Volume onto Source Subject Surface
+ 1 -1 -1 -1
+using old
+Done mapping volume to surface
+Number of source voxels hit = 108198
+Masking with /out/freesurfer/sub-36/label/rh.cortex.label
+Writing to /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.wm.mgh
+Dim: 205711 1 1
+mri_vol2surf --mov /out/freesurfer/sub-36/mri/rawavg.mgz --hemi rh --noreshape --interp trilinear --o /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.gm.mgh --projfrac 0.3 --regheader sub-36 --cortex
+srcvol = /out/freesurfer/sub-36/mri/rawavg.mgz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = rh
+ProjFrac = 0.3
+thickness = thickness
+reshape = 0
+interp = trilinear
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using /out/freesurfer/sub-36/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-0.99873  -0.02765  -0.04205   0.00002;
+-0.04433   0.08788   0.99514   0.00000;
+ 0.02382  -0.99575   0.08899   0.00003;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Loading label /out/freesurfer/sub-36/label/rh.cortex.label
+Reading surface /out/freesurfer/sub-36/surf/rh.white
+Done reading source surface
+Reading thickness /out/freesurfer/sub-36/surf/rh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+ 1 0.3 0.3 0.3
+using old
+Done mapping volume to surface
+Number of source voxels hit = 127120
+Masking with /out/freesurfer/sub-36/label/rh.cortex.label
+Writing to /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.gm.mgh
+Dim: 205711 1 1
+mri_concat /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.wm.mgh /out/freesurfer/sub-36/surf/tmp.pctsurfcon.97721/rh.gm.mgh --paired-diff-norm --mul 100 --o /out/freesurfer/sub-36/surf/rh.w-g.pct.mgh
+ninputs = 2
+Checking inputs
+nframestot = 2
+Allocing output
+Done allocing
+Combining pairs
+nframes = 1
+Multiplying by 100.000000
+Writing to /out/freesurfer/sub-36/surf/rh.w-g.pct.mgh
+mri_segstats --in /out/freesurfer/sub-36/surf/rh.w-g.pct.mgh --annot sub-36 rh aparc --sum /out/freesurfer/sub-36/stats/rh.w-g.pct.stats --snr
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --in /out/freesurfer/sub-36/surf/rh.w-g.pct.mgh --annot sub-36 rh aparc --sum /out/freesurfer/sub-36/stats/rh.w-g.pct.stats --snr 
+sysname  Linux
+hostname b11c2c40da5f
+machine  x86_64
+user     root
+UseRobust  0
+Constructing seg from annotation
+
+Reading annotation /out/freesurfer/sub-36/label/rh.aparc.annot
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+Seg base 2000
+Loading /out/freesurfer/sub-36/surf/rh.w-g.pct.mgh
+Vertex Area is 0.407237 mm^3
+Generating list of segmentation ids
+Found  36 segmentations
+Computing statistics for each segmentation
+
+Reporting on  35 segmentations
+Using PrintSegStat
+mri_segstats done
+Cleaning up
+
+Started at Wed Jan 15 22:28:59 UTC 2020 
+Ended   at Thu Jan 16 00:28:57 UTC 2020
+#@#%# recon-all-run-time-hours 1.999
+recon-all -s sub-36 finished without error at Thu Jan 16 00:28:57 UTC 2020
+
+
+
+New invocation of recon-all 
+
+
+
+Thu Jan 16 01:56:21 UTC 2020
+/out/freesurfer/sub-36
+/opt/freesurfer/bin/recon-all
+-autorecon-hemi rh -nohyporelabel -openmp 8 -subjid sub-36 -sd /out/freesurfer -notessellate -nosmooth1 -noinflate1 -noqsphere -nofix -nowhite -nosmooth2 -noinflate2 -nocurvHK -nocurvstats -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial -nocortparc2 -nocortparc3 -nopctsurfcon
+subjid sub-36
+setenv SUBJECTS_DIR /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Actual FREESURFER_HOME /opt/freesurfer
+build-stamp.txt: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1-f53a55a
+Linux b11c2c40da5f 4.4.0-170-generic #199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize unlimited
+memoryuse    unlimited
+vmemoryuse   unlimited
+descriptors  1048576 
+memorylocked 64 kbytes
+maxproc      unlimited
+maxlocks     unlimited
+maxsignal    1547317 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+
+              total        used        free      shared  buff/cache   available
+Mem:      396165352    15742528   345905088      176920    34517736   378802720
+Swap:      46874616     1924336    44950280
+
+########################################
+program versions used
+$Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:21-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:22-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:23-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:24-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:25-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:26-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:27-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2020/01/16-01:56:27-GMT  BuildTimeStamp: Oct 20 2017 13:59:15  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: root  Machine: b11c2c40da5f  Platform: Linux  PlatformVersion: 4.4.0-170-generic  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /opt/freesurfer/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /opt/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+#-----------------------------------------
+#@# Parcellation Stats rh Thu Jan 16 01:56:27 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.stats -b -a ../label/rh.aparc.annot -c ../label/aparc.annot.ctab sub-36 rh white 
+
+computing statistics for each annotation in ../label/rh.aparc.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.white...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+INFO: using ../label/rh.cortex.label as mask to calc cortex NumVert, SurfArea and MeanThickness.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+Saving annotation colortable ../label/aparc.annot.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 2108    896   2369  2.735 0.488     0.072     0.016       10     1.4  bankssts
+ 1805    707   2870  2.753 1.123     0.089     0.025       17     2.2  caudalanteriorcingulate
+ 5391   2196   8475  3.229 0.657     0.091     0.029       46     7.3  caudalmiddlefrontal
+ 4680   1726   4251  2.209 0.500     0.098     0.035       46     7.2  cuneus
+ 1144    447   1584  2.557 0.872     0.096     0.045       18     2.4  entorhinal
+ 6589   2734   9940  2.905 0.639     0.102     0.041       86    11.2  fusiform
+10888   4489  14503  2.822 0.528     0.084     0.023       95    10.1  inferiorparietal
+ 6581   2706   8727  2.617 0.761     0.092     0.034       77     9.6  inferiortemporal
+ 1778    711   2069  2.406 0.878     0.100     0.040       23     3.0  isthmuscingulate
+12757   4866  14351  2.491 0.564     0.094     0.030      122    15.8  lateraloccipital
+ 4866   2012   6881  2.811 0.746     0.102     0.043       73     9.9  lateralorbitofrontal
+ 8729   3449   9514  2.454 0.608     0.105     0.042      105    15.9  lingual
+ 3702   1570   4481  2.481 0.565     0.102     0.039       61     6.4  medialorbitofrontal
+ 7431   3012  11968  3.026 0.834     0.083     0.025       82     7.4  middletemporal
+ 1162    480   1700  2.914 0.815     0.081     0.023        8     1.0  parahippocampal
+ 3719   1438   4953  3.070 0.664     0.095     0.044       42     7.5  paracentral
+ 3282   1396   5127  3.026 0.503     0.093     0.027       40     3.8  parsopercularis
+ 2012    812   3469  2.992 0.769     0.100     0.033       22     2.9  parsorbitalis
+ 3287   1342   4460  2.746 0.666     0.078     0.021       28     2.6  parstriangularis
+ 4260   1803   3262  2.057 0.519     0.094     0.035       34     6.8  pericalcarine
+ 9738   3701  10544  2.501 0.624     0.082     0.028       91    12.0  postcentral
+ 2527   1062   3773  2.645 0.904     0.102     0.033       31     3.8  posteriorcingulate
+11153   4186  14026  3.135 0.611     0.087     0.038      140    19.8  precentral
+ 7954   3340  10158  2.703 0.565     0.092     0.031       76    10.9  precuneus
+ 1532    629   2486  2.743 1.035     0.117     0.049       26     3.6  rostralanteriorcingulate
+11897   4953  16968  2.661 0.654     0.100     0.037      149    19.3  rostralmiddlefrontal
+14799   6170  24248  3.125 0.663     0.092     0.031      133    19.8  superiorfrontal
+13538   5493  15807  2.483 0.489     0.088     0.028      132    16.3  superiorparietal
+ 7784   3113  10508  2.889 0.638     0.073     0.023       65     8.2  superiortemporal
+ 9569   3773  13148  2.911 0.597     0.088     0.028       99    10.8  supramarginal
+ 1096    505   1958  2.691 0.781     0.144     0.057       24     3.0  frontalpole
+ 1237    526   3090  3.776 0.919     0.097     0.036       14     2.1  temporalpole
+  869    310   1063  2.836 0.449     0.078     0.024        6     0.9  transversetemporal
+ 4455   1920   6708  3.473 0.765     0.104     0.044       49     9.4  insula
+
+ mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.pial.stats -b -a ../label/rh.aparc.annot -c ../label/aparc.annot.ctab sub-36 rh pial 
+
+computing statistics for each annotation in ../label/rh.aparc.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+INFO: using ../label/rh.cortex.label as mask to calc cortex NumVert, SurfArea and MeanThickness.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+Saving annotation colortable ../label/aparc.annot.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 2108    773   2369  2.735 0.488     0.067     0.020       29     1.6  bankssts
+ 1805   1096   2870  2.753 1.123     0.095     0.023       13     1.5  caudalanteriorcingulate
+ 5391   2816   8475  3.229 0.657     0.079     0.018       46     4.1  caudalmiddlefrontal
+ 4680   2152   4251  2.209 0.500     0.085     0.021       46     4.1  cuneus
+ 1144    706   1584  2.557 0.872     0.116     0.031       14     1.6  entorhinal
+ 6589   3826   9940  2.905 0.639     0.102     0.025       87     7.4  fusiform
+10888   5358  14503  2.822 0.528     0.085     0.022      126     9.6  inferiorparietal
+ 6581   3572   8727  2.617 0.761     0.098     0.023       65     7.0  inferiortemporal
+ 1778    854   2069  2.406 0.878     0.087     0.029       24     1.9  isthmuscingulate
+12757   6241  14351  2.491 0.564     0.081     0.020      124    10.0  lateraloccipital
+ 4866   2581   6881  2.811 0.746     0.105     0.031       75     6.4  lateralorbitofrontal
+ 8729   4182   9514  2.454 0.608     0.091     0.026      106    10.2  lingual
+ 3702   1905   4481  2.481 0.565     0.099     0.026       46     4.2  medialorbitofrontal
+ 7431   4504  11968  3.026 0.834     0.087     0.019       55     5.8  middletemporal
+ 1162    640   1700  2.914 0.815     0.093     0.037      143     1.5  parahippocampal
+ 3719   1716   4953  3.070 0.664     0.077     0.024       44     3.5  paracentral
+ 3282   1901   5127  3.026 0.503     0.097     0.022       46     3.2  parsopercularis
+ 2012   1342   3469  2.992 0.769     0.121     0.029       22     2.6  parsorbitalis
+ 3287   1730   4460  2.746 0.666     0.089     0.020       28     2.9  parstriangularis
+ 4260   1429   3262  2.057 0.519     0.064     0.022       68     3.9  pericalcarine
+ 9738   4582  10544  2.501 0.624     0.073     0.017       70     7.2  postcentral
+ 2527   1471   3773  2.645 0.904     0.103     0.028       27     3.0  posteriorcingulate
+11153   4568  14026  3.135 0.611     0.068     0.022      169    11.6  precentral
+ 7954   3952  10158  2.703 0.565     0.095     0.026      117     9.1  precuneus
+ 1532   1020   2486  2.743 1.035     0.127     0.030       28     2.3  rostralanteriorcingulate
+11897   7019  16968  2.661 0.654     0.108     0.026      135    15.1  rostralmiddlefrontal
+14799   8322  24248  3.125 0.663     0.096     0.024      141    15.6  superiorfrontal
+13538   6846  15807  2.483 0.489     0.085     0.021      184    12.4  superiorparietal
+ 7784   3934  10508  2.889 0.638     0.091     0.107      420    60.9  superiortemporal
+ 9569   4786  13148  2.911 0.597     0.089     0.024       97     9.6  supramarginal
+ 1096    873   1958  2.691 0.781     0.148     0.032       10     1.9  frontalpole
+ 1237   1022   3090  3.776 0.919     0.112     0.026       14     1.5  temporalpole
+  869    407   1063  2.836 0.449     0.076     0.016        4     0.6  transversetemporal
+ 4455   1759   6708  3.473 0.765     0.081     0.025      104     4.6  insula
+#-----------------------------------------
+#@# Parcellation Stats 2 rh Thu Jan 16 01:58:21 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.a2009s.stats -b -a ../label/rh.aparc.a2009s.annot -c ../label/aparc.annot.a2009s.ctab sub-36 rh white 
+
+computing statistics for each annotation in ../label/rh.aparc.a2009s.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.white...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+INFO: using ../label/rh.cortex.label as mask to calc cortex NumVert, SurfArea and MeanThickness.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 76 entries read (originally Simple_surface_labels2008.txt)
+Saving annotation colortable ../label/aparc.annot.a2009s.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 2003    858   2571  2.472 0.622     0.112     0.052       29     5.1  G&S_frontomargin
+ 1932    799   2679  2.741 0.597     0.099     0.032       18     2.8  G&S_occipital_inf
+ 2645    920   3270  2.850 0.660     0.108     0.059       43     7.6  G&S_paracentral
+ 2092    804   2992  3.114 0.461     0.097     0.033       24     3.2  G&S_subcentral
+ 1767    761   2862  2.722 0.709     0.100     0.030       21     2.3  G&S_transv_frontopol
+ 3792   1592   5101  2.840 0.727     0.093     0.033       38     5.8  G&S_cingul-Ant
+ 2044    860   3329  3.193 0.658     0.085     0.026       15     2.4  G&S_cingul-Mid-Ant
+ 2300    969   3406  3.043 0.525     0.089     0.028       19     3.0  G&S_cingul-Mid-Post
+  559    252   1334  3.274 0.654     0.131     0.048        9     1.3  G_cingul-Post-dorsal
+  308    120    600  3.072 0.587     0.128     0.071        6     0.8  G_cingul-Post-ventral
+ 4602   1669   4265  2.184 0.545     0.103     0.038       51     7.8  G_cuneus
+ 2367    998   4376  3.126 0.450     0.108     0.036       40     3.7  G_front_inf-Opercular
+  796    293   1473  3.229 0.642     0.112     0.042       16     1.3  G_front_inf-Orbital
+ 1108    433   1981  3.087 0.552     0.086     0.022       12     1.0  G_front_inf-Triangul
+ 6468   2577  13041  3.214 0.732     0.123     0.049      118    14.5  G_front_middle
+10221   4145  20343  3.319 0.672     0.108     0.042      140    19.1  G_front_sup
+  778    306   1466  3.965 0.619     0.104     0.049       12     1.8  G_Ins_lg&S_cent_ins
+  814    329   1774  4.013 0.520     0.134     0.076       15     3.2  G_insular_short
+ 4117   1562   6265  2.904 0.466     0.094     0.028       47     4.5  G_occipital_middle
+ 2773   1001   3206  2.462 0.516     0.085     0.025       24     3.2  G_occipital_sup
+ 3188   1245   5286  3.091 0.603     0.116     0.051       58     6.7  G_oc-temp_lat-fusifor
+ 5822   2156   6715  2.421 0.631     0.111     0.048       84    12.1  G_oc-temp_med-Lingual
+ 1858    726   2838  2.896 0.911     0.100     0.043       26     3.7  G_oc-temp_med-Parahip
+ 4109   1667   7475  2.962 0.815     0.118     0.055       74    10.6  G_orbital
+ 4217   1659   7428  3.070 0.532     0.103     0.034       64     5.6  G_pariet_inf-Angular
+ 4152   1535   6767  3.136 0.580     0.094     0.034       56     6.0  G_pariet_inf-Supramar
+ 4470   1764   5740  2.480 0.559     0.098     0.038       58     7.2  G_parietal_sup
+ 3705   1202   4322  2.574 0.671     0.082     0.036       44     5.8  G_postcentral
+ 4495   1375   6582  3.362 0.614     0.097     0.056      100    12.1  G_precentral
+ 3650   1501   5722  2.724 0.590     0.114     0.047       62     7.9  G_precuneus
+  976    433   1714  2.587 0.550     0.139     0.052       30     2.4  G_rectus
+  374    143    442  2.817 0.621     0.090     0.056       15     0.9  G_subcallosal
+  521    186    784  2.992 0.323     0.079     0.024        4     0.5  G_temp_sup-G_T_transv
+ 2478    901   3923  2.950 0.640     0.093     0.040       39     4.6  G_temp_sup-Lateral
+ 1206    484   2140  3.753 0.745     0.055     0.015        4     0.8  G_temp_sup-Plan_polar
+ 1473    594   1991  2.658 0.558     0.076     0.020       12     1.3  G_temp_sup-Plan_tempo
+ 3037   1211   4864  2.866 0.713     0.107     0.051       54     6.3  G_temporal_inf
+ 4524   1735   8508  3.285 0.671     0.098     0.034       73     6.1  G_temporal_middle
+  733    308    720  2.448 0.624     0.061     0.011        2     0.4  Lat_Fis-ant-Horizont
+  353    161    350  2.681 0.406     0.068     0.014        1     0.2  Lat_Fis-ant-Vertical
+ 2712   1105   2694  2.905 0.507     0.073     0.019       13     2.0  Lat_Fis-post
+ 6403   2403   6243  2.224 0.578     0.098     0.035       70     9.2  Pole_occipital
+ 3193   1387   6816  3.193 0.952     0.113     0.049       46     7.0  Pole_temporal
+ 4282   1876   3784  2.413 0.616     0.091     0.032       32     6.3  S_calcarine
+ 4435   1932   4147  2.584 0.738     0.077     0.022       20     4.5  S_central
+ 1843    772   1976  2.556 0.528     0.076     0.020       10     1.4  S_cingul-Marginalis
+  728    332    869  3.134 0.616     0.081     0.026        4     0.8  S_circular_insula_ant
+ 1634    742   1717  2.686 0.635     0.068     0.020        7     1.6  S_circular_insula_inf
+ 2052    898   2201  2.889 0.688     0.077     0.022        9     2.1  S_circular_insula_sup
+ 1677    769   1707  2.275 0.604     0.062     0.010        5     0.7  S_collat_transv_ant
+  761    312    585  2.597 0.371     0.092     0.025        5     0.8  S_collat_transv_post
+ 2911   1245   2734  2.479 0.534     0.074     0.016       14     1.9  S_front_inf
+ 2838   1198   2785  2.414 0.468     0.073     0.017       12     2.1  S_front_middle
+ 3853   1648   4355  2.845 0.446     0.071     0.018       17     2.7  S_front_sup
+  970    404    857  2.582 0.374     0.079     0.015        4     0.8  S_interm_prim-Jensen
+ 5092   2209   5177  2.486 0.389     0.072     0.017       26     3.6  S_intrapariet&P_trans
+ 1704    720   1347  2.363 0.353     0.078     0.019        7     1.4  S_oc_middle&Lunatus
+ 2339   1035   2216  2.516 0.409     0.081     0.019       13     1.9  S_oc_sup&transversal
+  815    338    797  2.513 0.314     0.067     0.018        3     0.6  S_occipital_ant
+ 1314    560   1486  2.544 0.522     0.074     0.017        7     1.0  S_oc-temp_lat
+ 3011   1304   3258  2.639 0.656     0.081     0.022       16     2.8  S_oc-temp_med&Lingual
+  658    282    607  2.352 0.469     0.076     0.015        2     0.5  S_orbital_lateral
+  863    369    766  2.383 0.690     0.079     0.024        5     0.8  S_orbital_med-olfact
+ 1755    733   1981  2.566 0.589     0.088     0.025       13     2.0  S_orbital-H_Shaped
+ 3682   1535   3624  2.540 0.514     0.084     0.025       22     4.0  S_parieto_occipital
+ 2456    977   1138  1.543 0.482     0.085     0.024       25     2.2  S_pericallosal
+ 4527   1924   4428  2.366 0.437     0.074     0.016       25     2.8  S_postcentral
+ 2537   1052   2908  3.002 0.516     0.068     0.015        9     1.6  S_precentral-inf-part
+ 1931    863   2028  3.045 0.418     0.067     0.015        6     1.4  S_precentral-sup-part
+  477    202    381  2.181 0.387     0.105     0.037        4     0.9  S_suborbital
+ 1390    575   1621  2.632 0.621     0.079     0.021        9     1.2  S_subparietal
+ 1569    664   1299  2.213 0.700     0.078     0.012        7     1.0  S_temporal_inf
+ 8823   3773  10017  2.744 0.573     0.069     0.015       42     5.2  S_temporal_sup
+  318    131    314  2.647 0.328     0.067     0.015        1     0.2  S_temporal_transverse
+#-----------------------------------------
+#@# Parcellation Stats 3 rh Thu Jan 16 01:59:20 UTC 2020
+/out/freesurfer/sub-36/scripts
+
+ mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.DKTatlas.stats -b -a ../label/rh.aparc.DKTatlas.annot -c ../label/aparc.annot.DKTatlas.ctab sub-36 rh white 
+
+computing statistics for each annotation in ../label/rh.aparc.DKTatlas.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.white...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+INFO: using ../label/rh.cortex.label as mask to calc cortex NumVert, SurfArea and MeanThickness.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+Saving annotation colortable ../label/aparc.annot.DKTatlas.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 1907    751   2962  2.725 1.113     0.090     0.025       18     2.2  caudalanteriorcingulate
+ 5609   2299   8698  3.216 0.654     0.090     0.029       47     7.6  caudalmiddlefrontal
+ 5474   2045   4993  2.218 0.486     0.096     0.033       51     8.1  cuneus
+ 1006    392   1316  2.447 0.879     0.097     0.047       16     2.2  entorhinal
+ 5797   2381   8642  2.936 0.630     0.099     0.039       74     9.0  fusiform
+11033   4557  14818  2.827 0.530     0.085     0.023      100    10.2  inferiorparietal
+ 7358   3067   9935  2.622 0.738     0.094     0.036       87    11.7  inferiortemporal
+ 1743    701   1966  2.386 0.865     0.101     0.040       23     2.9  isthmuscingulate
+12977   4918  14530  2.483 0.565     0.094     0.030      125    16.0  lateraloccipital
+ 6177   2533   8881  2.758 0.717     0.110     0.049       93    14.0  lateralorbitofrontal
+ 8639   3422   9421  2.453 0.602     0.105     0.042      103    15.8  lingual
+ 2951   1253   4084  2.522 0.604     0.115     0.045       71     6.2  medialorbitofrontal
+ 8954   3660  13921  2.985 0.796     0.082     0.023       91     8.4  middletemporal
+ 1285    529   1839  2.892 0.821     0.081     0.023        9     1.2  parahippocampal
+ 3863   1495   5151  3.074 0.660     0.094     0.042       42     7.5  paracentral
+ 3646   1536   5539  2.995 0.506     0.091     0.027       42     4.0  parsopercularis
+ 1564    643   2686  3.030 0.767     0.093     0.030       15     2.0  parsorbitalis
+ 3218   1330   4315  2.695 0.690     0.079     0.020       27     2.7  parstriangularis
+ 4207   1772   3212  2.045 0.515     0.096     0.037       36     6.9  pericalcarine
+10972   4217  11911  2.498 0.610     0.083     0.029      105    13.9  postcentral
+ 2639   1106   3945  2.669 0.891     0.101     0.033       31     3.9  posteriorcingulate
+10682   3980  13676  3.139 0.620     0.087     0.039      140    19.4  precentral
+ 8437   3514  10828  2.685 0.586     0.094     0.033       86    12.1  precuneus
+ 1786    737   2719  2.709 0.989     0.113     0.046       27     3.9  rostralanteriorcingulate
+ 8250   3433  11845  2.658 0.671     0.102     0.036      106    13.4  rostralmiddlefrontal
+19000   7952  29903  3.032 0.685     0.092     0.031      175    25.2  superiorfrontal
+10892   4454  12891  2.510 0.482     0.087     0.027      101    12.5  superiorparietal
+10380   4226  15422  3.015 0.735     0.079     0.026       94    12.2  superiortemporal
+ 9024   3531  12176  2.910 0.598     0.084     0.027       86     9.7  supramarginal
+  879    315   1077  2.833 0.429     0.077     0.024        6     0.9  transversetemporal
+ 4031   1753   6206  3.492 0.754     0.102     0.043       42     8.3  insula
+/out/freesurfer/sub-36/label
+#--------------------------------------------
+#@# BA_exvivo Labels rh Thu Jan 16 02:00:18 UTC 2020
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA1_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA1_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA1_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 3962 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3962 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1288
+Checking for and removing duplicates
+Writing label file ./rh.BA1_exvivo.label 5250
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA2_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA2_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA2_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 6687 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6687 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 2110
+Checking for and removing duplicates
+Writing label file ./rh.BA2_exvivo.label 8797
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA3a_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA3a_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA3a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA3a_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 3980 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3980 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 658
+Checking for and removing duplicates
+Writing label file ./rh.BA3a_exvivo.label 4638
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA3b_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA3b_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA3b_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA3b_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 4522 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4522 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1156
+Checking for and removing duplicates
+Writing label file ./rh.BA3b_exvivo.label 5678
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA4a_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA4a_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA4a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA4a_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 5747 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5747 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1829
+Checking for and removing duplicates
+Writing label file ./rh.BA4a_exvivo.label 7576
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA4p_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA4p_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA4p_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA4p_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 4473 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4473 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1150
+Checking for and removing duplicates
+Writing label file ./rh.BA4p_exvivo.label 5623
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA6_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA6_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA6_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA6_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 12256 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  12256 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 3491
+Checking for and removing duplicates
+Writing label file ./rh.BA6_exvivo.label 15747
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA44_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA44_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA44_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA44_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 6912 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6912 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 2114
+Checking for and removing duplicates
+Writing label file ./rh.BA44_exvivo.label 9026
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA45_exvivo.label --trgsubject sub-36 --trglabel ./rh.BA45_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA45_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA45_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 5355 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5355 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 2443
+Checking for and removing duplicates
+Writing label file ./rh.BA45_exvivo.label 7798
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.V1_exvivo.label --trgsubject sub-36 --trglabel ./rh.V1_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.V1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.V1_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 4727 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4727 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 6091
+Checking for and removing duplicates
+Writing label file ./rh.V1_exvivo.label 10818
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.V2_exvivo.label --trgsubject sub-36 --trglabel ./rh.V2_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.V2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.V2_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 8016 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  8016 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 10156
+Checking for and removing duplicates
+Writing label file ./rh.V2_exvivo.label 18172
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.MT_exvivo.label --trgsubject sub-36 --trglabel ./rh.MT_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.MT_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.MT_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1932 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1932 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1186
+Checking for and removing duplicates
+Writing label file ./rh.MT_exvivo.label 3118
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.entorhinal_exvivo.label --trgsubject sub-36 --trglabel ./rh.entorhinal_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.entorhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.entorhinal_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1038 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1038 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 549
+Checking for and removing duplicates
+Writing label file ./rh.entorhinal_exvivo.label 1587
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.perirhinal_exvivo.label --trgsubject sub-36 --trglabel ./rh.perirhinal_exvivo.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.perirhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.perirhinal_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 752 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  752 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 512
+Checking for and removing duplicates
+Writing label file ./rh.perirhinal_exvivo.label 1264
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA1_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA1_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 876 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  876 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 306
+Checking for and removing duplicates
+Writing label file ./rh.BA1_exvivo.thresh.label 1182
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA2_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA2_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 2688 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2688 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 707
+Checking for and removing duplicates
+Writing label file ./rh.BA2_exvivo.thresh.label 3395
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA3a_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA3a_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA3a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA3a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1698 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1698 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 176
+Checking for and removing duplicates
+Writing label file ./rh.BA3a_exvivo.thresh.label 1874
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA3b_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA3b_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA3b_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA3b_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 2183 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2183 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 553
+Checking for and removing duplicates
+Writing label file ./rh.BA3b_exvivo.thresh.label 2736
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA4a_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA4a_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA4a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA4a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1388 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1388 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 400
+Checking for and removing duplicates
+Writing label file ./rh.BA4a_exvivo.thresh.label 1788
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA4p_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA4p_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA4p_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA4p_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1489 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1489 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 352
+Checking for and removing duplicates
+Writing label file ./rh.BA4p_exvivo.thresh.label 1841
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA6_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA6_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA6_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA6_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 6959 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6959 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 1634
+Checking for and removing duplicates
+Writing label file ./rh.BA6_exvivo.thresh.label 8593
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA44_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA44_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA44_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA44_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1012 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1012 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 593
+Checking for and removing duplicates
+Writing label file ./rh.BA44_exvivo.thresh.label 1605
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.BA45_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.BA45_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.BA45_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.BA45_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 1178 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1178 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 415
+Checking for and removing duplicates
+Writing label file ./rh.BA45_exvivo.thresh.label 1593
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.V1_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.V1_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.V1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.V1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 3232 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3232 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 4218
+Checking for and removing duplicates
+Writing label file ./rh.V1_exvivo.thresh.label 7450
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.V2_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.V2_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.V2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.V2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 3437 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3437 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 4402
+Checking for and removing duplicates
+Writing label file ./rh.V2_exvivo.thresh.label 7839
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.MT_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.MT_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.MT_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.MT_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 268 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  268 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 176
+Checking for and removing duplicates
+Writing label file ./rh.MT_exvivo.thresh.label 444
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.entorhinal_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.entorhinal_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.entorhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.entorhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 694 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  694 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 365
+Checking for and removing duplicates
+Writing label file ./rh.entorhinal_exvivo.thresh.label 1059
+mri_label2label: Done
+
+
+ mri_label2label --srcsubject fsaverage --srclabel /out/freesurfer/fsaverage/label/rh.perirhinal_exvivo.thresh.label --trgsubject sub-36 --trglabel ./rh.perirhinal_exvivo.thresh.label --hemi rh --regmethod surface 
+
+
+srclabel = /out/freesurfer/fsaverage/label/rh.perirhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-36
+trglabel = ./rh.perirhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /out/freesurfer
+FREESURFER_HOME /opt/freesurfer
+Loading source label.
+Found 291 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /out/freesurfer/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /out/freesurfer/sub-36/surf/rh.white
+Reading target registration 
+ /out/freesurfer/sub-36/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  291 nlabel points
+Performing mapping from target back to the source label 205711
+Number of reverse mapping hits = 189
+Checking for and removing duplicates
+Writing label file ./rh.perirhinal_exvivo.thresh.label 480
+mri_label2label: Done
+
+
+ mris_label2annot --s sub-36 --hemi rh --ctab /opt/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.label --l rh.BA2_exvivo.label --l rh.BA3a_exvivo.label --l rh.BA3b_exvivo.label --l rh.BA4a_exvivo.label --l rh.BA4p_exvivo.label --l rh.BA6_exvivo.label --l rh.BA44_exvivo.label --l rh.BA45_exvivo.label --l rh.V1_exvivo.label --l rh.V2_exvivo.label --l rh.MT_exvivo.label --l rh.entorhinal_exvivo.label --l rh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose 
+
+Reading ctab /opt/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /out/freesurfer/sub-36/label
+cmdline mris_label2annot --s sub-36 --hemi rh --ctab /opt/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.label --l rh.BA2_exvivo.label --l rh.BA3a_exvivo.label --l rh.BA3b_exvivo.label --l rh.BA4a_exvivo.label --l rh.BA4p_exvivo.label --l rh.BA6_exvivo.label --l rh.BA44_exvivo.label --l rh.BA45_exvivo.label --l rh.V1_exvivo.label --l rh.V2_exvivo.label --l rh.MT_exvivo.label --l rh.entorhinal_exvivo.label --l rh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose 
+sysname  Linux
+hostname b11c2c40da5f
+machine  x86_64
+user     root
+
+subject sub-36
+hemi    rh
+SUBJECTS_DIR /out/freesurfer
+ColorTable /opt/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo
+nlables 14
+LabelThresh 0 0.000000
+Loading /out/freesurfer/sub-36/surf/rh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 138990 unhit vertices
+Writing annot to /out/freesurfer/sub-36/label/rh.BA_exvivo.annot
+
+ mris_label2annot --s sub-36 --hemi rh --ctab /opt/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose 
+
+Reading ctab /opt/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /out/freesurfer/sub-36/label
+cmdline mris_label2annot --s sub-36 --hemi rh --ctab /opt/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose 
+sysname  Linux
+hostname b11c2c40da5f
+machine  x86_64
+user     root
+
+subject sub-36
+hemi    rh
+SUBJECTS_DIR /out/freesurfer
+ColorTable /opt/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo.thresh
+nlables 14
+LabelThresh 0 0.000000
+Loading /out/freesurfer/sub-36/surf/rh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 167875 unhit vertices
+Writing annot to /out/freesurfer/sub-36/label/rh.BA_exvivo.thresh.annot
+
+ mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-36 rh white 
+
+computing statistics for each annotation in ./rh.BA_exvivo.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.white...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /opt/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 1638    478   1954  2.730 0.560     0.097     0.048       25     3.2  BA1_exvivo
+ 5407   2177   5616  2.490 0.495     0.072     0.020       35     4.7  BA2_exvivo
+ 1489    685   1154  2.373 0.486     0.091     0.028       10     1.8  BA3a_exvivo
+ 3142   1210   2876  2.144 0.582     0.077     0.023       23     3.3  BA3b_exvivo
+ 2754    878   3476  3.283 0.598     0.101     0.065       50     8.4  BA4a_exvivo
+ 1938    824   2422  3.231 0.505     0.090     0.032       14     3.1  BA4p_exvivo
+11695   4506  18848  3.275 0.626     0.089     0.037      137    19.7  BA6_exvivo
+ 5330   2229   7376  3.004 0.496     0.087     0.025       52     5.6  BA44_exvivo
+ 5891   2416   8564  2.754 0.719     0.086     0.024       58     5.8  BA45_exvivo
+ 7771   3046   6964  2.153 0.570     0.099     0.042       87    14.3  V1_exvivo
+14965   5712  14859  2.334 0.544     0.100     0.035      150    22.5  V2_exvivo
+ 3008   1227   3363  2.644 0.408     0.082     0.022       20     2.6  MT_exvivo
+  979    380   1597  2.681 0.859     0.093     0.041       10     1.6  perirhinal_exvivo
+  714    310    993  2.697 0.819     0.095     0.031        6     1.3  entorhinal_exvivo
+
+ mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-36 rh white 
+
+computing statistics for each annotation in ./rh.BA_exvivo.thresh.annot.
+reading volume /out/freesurfer/sub-36/mri/wm.mgz...
+reading input surface /out/freesurfer/sub-36/surf/rh.white...
+reading input pial surface /out/freesurfer/sub-36/surf/rh.pial...
+reading input white surface /out/freesurfer/sub-36/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 262277
+Total vertex volume 259507 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /opt/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.thresh.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1572283 mm^3    (det: 1.239030 )
+lhCtxGM: 255588.128 505553.000  diff=-249964.9  pctdiff=-97.800
+rhCtxGM: 256447.689 503733.000  diff=-247285.3  pctdiff=-96.427
+lhCtxWM: 175205.346 394616.000  diff=-219410.7  pctdiff=-125.231
+rhCtxWM: 171343.118 392283.000  diff=-220939.9  pctdiff=-128.946
+SubCortGMVol  115318.000
+SupraTentVol  983228.281 (1932345.000) diff=-949116.719 pctdiff=-96.531
+SupraTentVolNotVent  962462.281 (1911579.000) diff=-949116.719 pctdiff=-98.613
+BrainSegVol  2220056.000 (2215872.000) diff=4184.000 pctdiff=0.188
+BrainSegVolNotVent  2193647.000 (1255868.281) diff=937778.719 pctdiff=42.750
+BrainSegVolNotVent  2193647.000
+CerebellumVol 281890.000
+VentChorVol   20766.000
+3rd4th5thCSF   5643.000
+CSFVol  1459.000, OptChiasmVol   178.000
+MaskVol 2703135.000
+ 1052    315   1236  2.549 0.658     0.097     0.046       17     2.0  BA1_exvivo
+ 2978   1151   3283  2.579 0.541     0.072     0.025       24     3.3  BA2_exvivo
+ 1364    633    971  2.355 0.479     0.088     0.026        7     1.5  BA3a_exvivo
+ 2410    973   2007  2.017 0.497     0.072     0.019       12     2.2  BA3b_exvivo
+ 1564    513   2151  3.378 0.666     0.114     0.075       26     5.8  BA4a_exvivo
+ 1572    688   2031  3.348 0.483     0.087     0.028        9     2.2  BA4p_exvivo
+ 7208   2749  11447  3.302 0.616     0.090     0.039       97    12.9  BA6_exvivo
+ 1550    648   2756  3.182 0.487     0.098     0.032       22     2.1  BA44_exvivo
+ 1455    589   2383  2.976 0.526     0.094     0.026       21     1.5  BA45_exvivo
+ 7416   2936   6493  2.150 0.568     0.097     0.040       77    13.0  V1_exvivo
+ 7775   2948   7436  2.223 0.545     0.106     0.039       89    13.4  V2_exvivo
+  430    159    584  2.864 0.360     0.081     0.028        3     0.5  MT_exvivo
+  594    230    883  2.644 0.914     0.092     0.038        6     1.1  perirhinal_exvivo
+  468    200    535  2.407 0.544     0.086     0.027        3     0.6  entorhinal_exvivo
+
+Started at Thu Jan 16 01:56:20 UTC 2020 
+Ended   at Thu Jan 16 02:06:47 UTC 2020
+#@#%# recon-all-run-time-hours 0.174
+recon-all -s sub-36 finished without error at Thu Jan 16 02:06:47 UTC 2020
